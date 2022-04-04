@@ -5,12 +5,12 @@
   text-decoration: none;
   font-family: Open Sans, sans-serif;
 }
-/*
-.body {
-  width: 100%;
-  min-width: 1200px;
-  font-family: Open Sans, sans-serif;
-}
+/**
+*.body {
+*  width: 100%;
+*  min-width: 1200px;
+*  font-family: Open Sans, sans-serif;
+*}
 */
 .header__page {
   width: 100%;
