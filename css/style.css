@@ -61,6 +61,7 @@
 }
 
 .header__menu {
+  font-family: Open Sans lighter, sans-serif;
   
 }
 .menu__list {
@@ -88,7 +89,7 @@
 	margin-right: auto;  /*Центрируем*/
 	/*background-color: #000000;*/ 
 
-	padding-top: 1.22em; /*Внутренний отступ сверху 55px*/ 
+	marging-top: 1.22em; /*Внешний отступ сверху 55px*/ 
 	text-align: center;
   
 	font-family: inherit;
@@ -104,8 +105,19 @@
 .footer__page {}
 
 @font-face {
-font-family: Open Sans;
-src: url(../fonts/OpenSans-Bold.woff);
-font-weight: 400;
-font-style: normal;
+	font-family: Open Sans;
+	src: url(../fonts/OpenSans-Bold.woff), 
+	src: url(../fonts/OpenSans-Bold.woff2);
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Open Sans lighter;
+	src: url(../fonts/OpenSans-Bold.woff), 
+	src: url(../fonts/OpenSans-Bold.woff);
+	font-weight: lighter;
+	font-style: normal;
+	font-display: swap;
 }
