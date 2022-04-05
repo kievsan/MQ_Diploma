@@ -3,13 +3,12 @@
   padding:0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: Open Sans Bold, sans-serif;
+  /*font-family: "Open Sans Bold", sans-serif;*/
 }
 
 .body {/**
   *width: 100%;
   *min-width: 1200px;
-  *font-family: Open Sans, sans-serif;
   */
 }
 
@@ -61,7 +60,7 @@
 }
 
 .header__menu {
-	font-family: Open Sans Bold, sans-serif;
+	font-family: "Open Sans Bold", sans-serif;
 	font-weight: lighter;
 }
 .menu__list {
@@ -92,7 +91,7 @@
 	margin-top: 1.22em; /*Внешний отступ сверху 55px*/ 
 	text-align: center;
   
-	font-family: Open Sans Bold, sans-serif;
+	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
 	font-size: 45px;
 	line-height: 75px;    
@@ -105,7 +104,7 @@
 .footer__page {}
 
 @font-face {
-	font-family: Open Sans Bold;
+	font-family: "Open Sans Bold";
 	src: url(../fonts/OpenSans-Bold.truetype) format("truetype"),
 		url(../fonts/OpenSans-Bold.woff) format("woff"), 
 		url(../fonts/OpenSans-Bold.woff2) format("woff2");
@@ -115,7 +114,7 @@
 }
 
 @font-face {
-	font-family: Open Sans Regular;
+	font-family: "Open Sans Regular";
 	src: url(../fonts/OpenSans-Regular.truetype) format("truetype"),
 		url(../fonts/OpenSans-Regular.woff) format("woff"), 
 		url(../fonts/OpenSans-Regular.woff2) format("woff2");
