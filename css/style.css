@@ -10,6 +10,8 @@
 
 .header__page {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 100%;
 	min-width: 1200px;  
 	padding-top: 0.67em;  	/*Внутренний отступ сверху 30px*/
@@ -82,15 +84,14 @@
 .header__title {
 	display: block;
 	width: 37%; 
-	margin-left: auto;   /*Центрируем блок с текстом заголовка*/
-	margin-right: auto;  /*Центрируем*/
-	margin-top: auto;
-	margin-bottom: auto;
+	/*margin-left: auto;   /*Центрируем блок с текстом заголовка*/
+	/*margin-right: auto;  /*Центрируем*/
+	/*margin-top: auto;*/
+	/*margin-bottom: auto;*/
 	/*background-color: #000000;*/ 
 
 	/*margin-top: 2.7em; /*Внешний отступ сверху 121px*/ 
 	text-align: center;
-	justify-content: center;
   
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
