@@ -57,10 +57,6 @@
 .header__logo {
   width: 190px;
   background-color: #000000;
-  /**
-  *padding-top: 26px;
-  *padding-left: 70px;
-  */
 }
 
 .header__menu {
