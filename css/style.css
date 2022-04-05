@@ -63,26 +63,16 @@
   padding-top: 45px;
   padding-right: 10%;
 }
-
-ul {
-  
-}
 .menu__list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
 
-li {
-  
-}
 .menu__list-one:nth-child(n +2) {
   margin-left: 33px;
 }
 
-a {
-    
-}
 .menu__link {
   text-decoration: none;
   font-family: inherit;
@@ -91,13 +81,14 @@ a {
   color: inherit;
 }
 
-h1 {
-  display: block;
-  width: 37%;  
-  margin-left: auto;   /*Центрируем блок с текстом заголовка*/
-  margin-right: auto;  /*Центрируем*/
-  /*background-color: #000000;*/ 
-}
+/*h1 {*/
+/*  display: block;*/
+/*  width: 37%; */ 
+/*  margin-left: auto;   /*Центрируем блок с текстом заголовка*/
+/*  margin-right: auto;  /*Центрируем*/
+/*  /*background-color: #000000;*/ 
+/*}
+*/
 .header__title {
   padding-top: 1.22em; /*Внутренний отступ сверху 55px*/ 
   text-align: center;
