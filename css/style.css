@@ -81,14 +81,14 @@
   color: inherit;
 }
 
-/*h1 {*/
-/*  display: block;*/
-/*  width: 37%; */ 
-/*  margin-left: auto;   /*Центрируем блок с текстом заголовка*/
-/*  margin-right: auto;  /*Центрируем*/
-/*  /*background-color: #000000;*/ 
-/*}
-*/
+.header__title {
+  display: block;
+  width: 37%; 
+  margin-left: auto;   /*Центрируем блок с текстом заголовка*/
+  margin-right: auto;  /*Центрируем*/
+  /*background-color: #000000;*/ 
+}
+
 .header__title {
   padding-top: 1.22em; /*Внутренний отступ сверху 55px*/ 
   text-align: center;
