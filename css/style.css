@@ -92,7 +92,7 @@
 	marging-top: 1.22em; /*Внешний отступ сверху 55px*/ 
 	text-align: center;
   
-	font-family: inherit;
+	font-family: Open Sans Bold, sans-serif;
 	font-weight: bold;
 	font-size: 45px;
 	line-height: 75px;    
@@ -106,9 +106,9 @@
 
 @font-face {
 	font-family: Open Sans Bold;
-	src: url(../fonts/OpenSans-Bold.TrueType),
-		url(../fonts/OpenSans-Bold.woff), 
-		url(../fonts/OpenSans-Bold.woff2);
+	src: url(../fonts/OpenSans-Bold.truetype) format("truetype"),
+		url(../fonts/OpenSans-Bold.woff) format("woff"), 
+		url(../fonts/OpenSans-Bold.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -116,9 +116,9 @@
 
 @font-face {
 	font-family: Open Sans Regular;
-	src: url(../fonts/OpenSans-Regular.TrueType),
-		url(../fonts/OpenSans-Regular.woff), 
-		url(../fonts/OpenSans-Regular.woff2);
+	src: url(../fonts/OpenSans-Regular.truetype) format("truetype"),
+		url(../fonts/OpenSans-Regular.woff) format("woff"), 
+		url(../fonts/OpenSans-Regular.woff2) format("woff2");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
