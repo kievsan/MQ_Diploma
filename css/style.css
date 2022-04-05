@@ -62,8 +62,7 @@
 
 .header__menu {
 	font-family: inherit;
-	font-weight: normal;
-  
+	font-weight: lighter;
 }
 .menu__list {
 	list-style: none;
