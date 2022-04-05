@@ -90,7 +90,7 @@
 
 	/*margin-top: 2.7em; /*Внешний отступ сверху 121px*/ 
 	text-align: center;
-	/*justify-content: center;*/
+	justify-content: center;
   
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
