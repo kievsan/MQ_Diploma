@@ -12,7 +12,7 @@
 	width: 100%;
 	min-width: 1200px;  
 	padding-top: 0.67em;  	/*Внутренний отступ сверху 30px*/
-	/*padding-bottom: 3.22em; /*Внутренний отступ снизу 145px*/
+	padding-bottom: 3.22em; /*Внутренний отступ снизу 145px*/
 	background-color: #2c4641;
 	background-image: url(../img/banner-bg.jpg);
 	background-repeat: no-repeat;
@@ -79,17 +79,17 @@
 }
 
 .header__title {
-	/*display: block;*/
-	display: flex;
+	display: block;
 	width: 37%; 
 	margin-left: auto;   /*Центрируем блок с текстом заголовка*/
 	margin-right: auto;  /*Центрируем*/
+	margin-top: auto;
+	margin-bottom: auto;
 	/*background-color: #000000;*/ 
 
 	/*margin-top: 2.7em; /*Внешний отступ сверху 121px*/ 
 	text-align: center;
-	flex-direction: column;
-	justify-content: center;
+	/*justify-content: center;*/
   
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
