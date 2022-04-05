@@ -3,7 +3,6 @@
   padding:0;
   box-sizing: border-box;
   text-decoration: none;
-  /*font-family: "Open Sans Bold", sans-serif;*/
 }
 
 .body {/**
@@ -60,8 +59,8 @@
 }
 
 .header__menu {
-	font-family: "Open Sans Bold", sans-serif;
-	font-weight: lighter;
+	font-family: "Open Sans lighter", sans-serif;
+	/*font-weight: lighter;*/
 }
 .menu__list {
 	list-style: none;
@@ -110,7 +109,17 @@
 		url(../fonts/OpenSans-Bold.woff2) format("woff2");
 	font-weight: 400;
 	font-style: normal;
-	/*font-display: swap;*/
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Open Sans lighter";
+	src: url(../fonts/OpenSans-Bold.truetype) format("truetype"),
+		url(../fonts/OpenSans-Bold.woff) format("woff"), 
+		url(../fonts/OpenSans-Bold.woff2) format("woff2");
+	font-weight: lighter;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
