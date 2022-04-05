@@ -61,7 +61,8 @@
 }
 
 .header__menu {
-  font-weight: lighter;
+	font-family: inherit;
+	font-weight: normal;
   
 }
 .menu__list {
