@@ -3,7 +3,7 @@
   padding:0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: Open Sans, sans-serif;
+  font-family: Open Sans Bold, sans-serif;
 }
 
 .body {/**
@@ -105,7 +105,7 @@
 .footer__page {}
 
 @font-face {
-	font-family: Open Sans;
+	font-family: Open Sans Bold;
 	src: url(../fonts/OpenSans-Bold.TrueType),
 		url(../fonts/OpenSans-Bold.woff), 
 		url(../fonts/OpenSans-Bold.woff2);
