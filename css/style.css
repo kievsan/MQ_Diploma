@@ -9,6 +9,7 @@
 }
 
 .header__page {
+	display: flex;
 	width: 100%;
 	min-width: 1200px;  
 	padding-top: 0.67em;  	/*Внутренний отступ сверху 30px*/
