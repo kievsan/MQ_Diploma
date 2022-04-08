@@ -83,8 +83,9 @@
 
 .header__title {
 	display: block;
-	width: 58%; 
-	max-width: 690px;
+	/*width: 58%;*/
+	/*max-width: 690px;*/
+	width: 690px;
 	margin-left: auto;   /*Центрируем блок с текстом заголовка*/
 	margin-right: auto;  /*Центрируем*/
 
