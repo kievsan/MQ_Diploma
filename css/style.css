@@ -3,17 +3,17 @@
 	padding:0;
 	box-sizing: border-box;
 	text-decoration: none;
-	font-size: 45px;
+	/*font-size: 45px;*/
 }
 
 .body {
 }
 
 .header__page {
-	width: 100%;
-	min-width: 1200px;  
-	padding-top: 0.62em;  	/*Внутренний отступ сверху 28px*/
-	padding-bottom: 2.9em; /*Внутренний отступ снизу 130px*/
+	/*width: 100%;*/
+	/*min-width: 1200px;*/
+	padding-top: 28px;  	/*Внутренний отступ сверху 28px*/
+	padding-bottom: 148px; /*Внутренний отступ снизу 148px*/
 	background-color: #2c4641;
 	background-image: url(../img/banner-bg.jpg);
 	background-repeat: no-repeat;
@@ -40,8 +40,10 @@
 }
 
 .container {
-	font-family: inherit;
-	width: 1200px;
+	/*font-family: inherit;*/
+	width: 69.83%;
+	min-width: 690px;
+	max-width: 1160px;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -52,7 +54,7 @@
 }
 
 .header__logo {
-	width: 190px;
+	width: 180px;
 	background-color: #000000;
 }
 
@@ -81,12 +83,12 @@
 
 .header__title {
 	display: block;
-	width: 41%; 
+	width: 58%; 
 	max-width: 690px;
 	margin-left: auto;   /*Центрируем блок с текстом заголовка*/
 	margin-right: auto;  /*Центрируем*/
 
-	margin-top: 2em; /*Внешний отступ сверху 90px*/ 
+	margin-top: 80px; /*Внешний отступ сверху 125px*/ 
 	text-align: center;
   
 	font-family: "Open Sans Bold", sans-serif;
@@ -103,7 +105,7 @@
 
 @font-face {
 	font-family: "Open Sans Bold";
-	src: url(../fonts/OpenSans-Bold.truetype) format("truetype"),
+	src: url(../fonts/OpenSans-Bold.ttf) format("truetype"),
 		url(../fonts/OpenSans-Bold.woff) format("woff"), 
 		url(../fonts/OpenSans-Bold.woff2) format("woff2");
 	font-weight: 400;
@@ -113,7 +115,7 @@
 
 @font-face {
 	font-family: "Open Sans Regular";
-	src: url(../fonts/OpenSans-Regular.truetype) format("truetype"),
+	src: url(../fonts/OpenSans-Regular.ttf) format("truetype"),
 		url(../fonts/OpenSans-Regular.woff) format("woff"), 
 		url(../fonts/OpenSans-Regular.woff2) format("woff2");
 	font-weight: normal;
