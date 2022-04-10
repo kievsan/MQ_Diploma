@@ -12,12 +12,12 @@
 .header__page {
 	/*width: 100%;*/
 	/*min-width: 1200px;*/
-	padding-top: 28px;  	/*Внутренний отступ сверху 28px*/
-	padding-bottom: 148px; /*Внутренний отступ снизу 148px*/
+	padding-top: 28px;  	/*Внутренний отступ сверху*/
+	padding-bottom: 123px; /*Внутренний отступ снизу*/
 	background-color: #2c4641;
 	background-image: url(../img/banner-bg.jpg);
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: left top;
 	background-size: cover;
   
 	font-family: inherit;
@@ -39,7 +39,7 @@
     left: 0;
 }
 
-.container {
+.container__header__page {
 	/*font-family: inherit;*/
 	width: 69.83%;
 	min-width: 690px;
@@ -53,12 +53,12 @@
 	z-index: 5;
 }
 
-.header__logo {
+.logo__header__page {
 	width: 180px;
 	background-color: #000000;
 }
 
-.header__menu {
+.menu__header__page {
 	font-family: "Open Sans Regular", sans-serif;
 	font-weight: lighter;
 }
@@ -81,7 +81,7 @@
 	color: inherit;
 }
 
-.header__title {
+.title__header__page {
 	display: block;
 	/*width: 58%;*/
 	/*max-width: 690px;*/
@@ -89,7 +89,7 @@
 	margin-left: auto;   /*Центрируем блок с текстом заголовка*/
 	margin-right: auto;  /*Центрируем*/
 
-	margin-top: 80px; /*Внешний отступ сверху 125px*/ 
+	margin-top: 105px; /*Внешний отступ сверху 125px*/ 
 	text-align: center;
   
 	font-family: "Open Sans Bold", sans-serif;
@@ -102,6 +102,59 @@
 }
 
 .content__page {}
+
+.trend-section__content__page {
+	/*width: 690px;*/
+	margin-left: auto;   /*Центрируем*/
+	margin-right: auto;  /*Центрируем*/
+}
+
+.header__trend-section {
+	color: #0f0d0e;
+	text-transform: uppercase;
+	background-color: #ffffff;
+	padding: 60px 0px 35px;
+}
+
+.header__trend-section:after {
+	display: block;
+	background-color: #e1d9bd;
+	content: "";
+	width: 65px;
+	height: 3px;	
+	margin-left: auto;   /*Центрируем*/
+	margin-right: auto;  /*Центрируем*/
+	margin-top: 10px;
+}
+
+.title__header__trend-section {
+	display: block;
+	/*width: 690px;*/
+	margin-left: auto;   /*Центрируем*/
+	margin-right: auto;  /*Центрируем*/
+	text-align: center;
+  
+	font-family: "Open Sans Bold", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 29px;
+  
+	position: relative;
+}
+
+.hotposts__trend-section {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.topic-article {}
+
+.previewbox__topic-article {}
+
+.preview__topic-article {}
+
 .footer__page {}
 
 @font-face {
