@@ -145,15 +145,23 @@
 .hotposts__trend-section {
 	box-sizing: border-box;
 	display: flex;
-	flex-direction: row;
-	width: 100%;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	/*align-items: flex-end;*/
+	align-items: stretch safe;
 }
 
-.topic-article {}
+.topic-article {
+	width: 24.8%;
+}
 
-.previewbox__topic-article {}
+.previewbox__topic-article {
+}
 
-.preview__topic-article {}
+.preview__topic-article {
+  max-width: 100%;
+  display: block;
+}
 
 .footer__page {}
 
