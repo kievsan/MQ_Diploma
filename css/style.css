@@ -9,7 +9,7 @@
 .body {
 }
 
-.header__page {
+.header-page {
 	/*width: 100%;*/
 	/*min-width: 1200px;*/
 	padding-top: 28px;  	/*Внутренний отступ сверху*/
@@ -28,7 +28,7 @@
 	/*z-index: 5;*/
 }
 
-.header__page::after {
+.header-page::after {
     content: "";
     background-color: #000000;
     opacity: 0.6;
@@ -39,7 +39,7 @@
     left: 0;
 }
 
-.container__header__page {
+.container__header-page {
 	/*font-family: inherit;*/
 	width: 69.83%;
 	min-width: 690px;
@@ -54,26 +54,26 @@
 	z-index: 5;
 }
 
-.logo__header__page {
+.logo__header-page {
 	width: 180px;
 }
 
-.menu__header__page {
+.menu__header-page {
 	font-family: "Open Sans Regular", sans-serif;
 	font-weight: lighter;
 }
 
-.menu__list {
+.menu-list {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.menu__list-one:nth-child(n + 2) {
+.menu-list-one__header-page:nth-child(n + 2) {
 	margin-left: 33px;
 }
 
-.menu__link {
+.menu-link__header-page {
 	text-decoration: none;
 	font-family: inherit;
 	font-size: 13px;
@@ -81,7 +81,7 @@
 	color: inherit;
 }
 
-.title__header__page {
+.title__header-page {
 	display: block;
 	/*width: 58%;*/
 	/*max-width: 690px;*/
@@ -101,9 +101,9 @@
 	z-index: 5; 
 }
 
-.content__page {}
+.content-page {}
 
-.trend-section__content__page {
+.trend-section__content-page {
 	/*width: 690px;*/
 	margin-left: auto;
 	margin-right: auto;
@@ -174,7 +174,7 @@
 .preview__topic-article::after {
     content: "";
     background-color: #000000;
-    opacity: 0.3;
+    opacity: 0.5;
     position: absolute;
     top: 0;
     right: 0;
@@ -202,6 +202,7 @@
 	display: block;
 	border: 3px solid #b59f5b;	
 	padding: 34px 32px;
+	padding-top: 25px;
 	
 	text-transform: uppercase;
 	font-family: "Open Sans Bold", sans-serif;
@@ -215,6 +216,24 @@
 	font-size: 20px;
 	line-height: 24px;
 	color: #ffffff;
+}
+
+.menu__topic-article {
+	font-family: "Open Sans Bold", sans-serif;
+	/*font-weight: 400;*/
+}
+
+.menu-list-one__topic-article:nth-child(n + 2) {
+	margin-left: 18px;
+}
+
+.menu-link__topic-article {
+	text-decoration: none;
+	font-family: inherit;
+	font-size: 14px;
+	line-height: 40px;
+	font-style: normal;
+	color: #b59f5b;
 }
 
 .footer__page {}
