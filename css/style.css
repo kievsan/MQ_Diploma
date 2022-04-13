@@ -246,6 +246,7 @@
 			/*	---------- ОСНОВНАЯ ЧАСТЬ ----------	*/
 .page-content {
 	display: flex;
+	min-width: 1200px;
 	margin: 0px auto;
 	flex-flow: row nowrap;
 	justify-content: center;
@@ -253,10 +254,10 @@
 }
 				/*	---------- СПИСОК СТАТЕЙ 'MAIN' ----------	*/
 .post-list__page-content {
-	max-width: 60%;
+	max-width: 65%;
 	/*padding-top: count(64px - 13px);*/
 	padding-top: 51px;
-	padding-right: 140px;
+	padding-right: 5%;
 	
 }
 
@@ -326,7 +327,7 @@
 
 			/*	---------- 'ASIDE' ----------	*/
 .aside__page-content {
-    max-width: 30%;
+    max-width: 25%;
 	order: 1;
 }
 
