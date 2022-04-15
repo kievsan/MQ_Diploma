@@ -107,8 +107,7 @@
 
 <div class='page-content'>
 	<main class='post-list__page-content'>
-			<!--
-			-->
+			<!-- 			-->
 		<article class='article__post-list'>
 			<picture class='preview__article__post-list'>
 				<img class='img__article__post-list' 
@@ -131,10 +130,10 @@
 					<span class='post-date'>10 июня 2019 &ensp; &nbsp;</span>
 					<a class='post-author' href="#0">Неизвестный автор</a>
 				</p>
-				<p class='description__article__post-list'>
-					Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел
-					, запущены фонтаны города... Музеи еще закрыты. Что посмотреть?
-				</p>
+				<div class='description__article__post-list'>
+					<p> Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, 
+						запущены фонтаны города... Музеи еще закрыты. Что посмотреть? </p>
+				</div>
 			</div>
 		</article>
 		<article class='article__post-list'>
@@ -159,10 +158,10 @@
 					<span class='post-date'>10 июня 2019 &ensp; &nbsp;</span>
 					<a class='post-author' href="#0">Неизвестный автор</a>
 				</p>
-				<p class='description__article__post-list'>
-					Расскажем, какие упражнения выбрать и как сделать коврик 
-					для занятий йогой из того, что можно найти в шкафу.
-				</p>
+				<div class='description__article__post-list'>
+					<p> Расскажем, какие упражнения выбрать и как сделать коврик 
+						для занятий йогой из того, что можно найти в шкафу.	</p>
+				</div>
 			</div>
 		</article>
 		<article class='article__post-list'>
@@ -184,11 +183,11 @@
 					<span class='post-date'>10 июня 2019 &ensp; &nbsp;</span>
 					<a class='post-author' href="#0">Неизвестный автор</a>
 				</p>
-				<p class='description__article__post-list'>
-					Лето на носу, а с ним и музыкальные фестивали. 
-					На каком же из них вы разобъете свою палатку? </p>
-				<p class='description__article__post-list'>
-					Мы составили список лучших летних фестивалей по всему миру.	</p>
+				<div class='description__article__post-list'>
+					<p> Лето на носу, а с ним и музыкальные фестивали. 
+						На каком же из них вы разобъете свою палатку? </p>
+					<p class='p-margin-top'> Мы составили список лучших летних фестивалей по всему миру. </p>
+				</div>
 			</div>
 		</article>
 		<article class='article__post-list'>
@@ -213,10 +212,10 @@
 					<span class='post-date'>10 июня 2019 &ensp; &nbsp;</span>
 					<a class='post-author' href="#0">Неизвестный автор</a>
 				</p>
-				<p class='description__article__post-list'>
-					Узнаем основы проектирования новых пищевых и около-пищевых опытов, 
-					вскроем физику, химию и микробиологию еды.
-				</p>
+				<div class='description__article__post-list'>
+					<p> Узнаем основы проектирования новых пищевых и около-пищевых опытов, 
+						вскроем физику, химию и микробиологию еды. </p>
+				</div>
 			</div>
 		</article>
 		<article class='article__post-list'>
@@ -244,14 +243,13 @@
 					<span class='post-date'>10 июня 2019 &ensp; &nbsp;</span>
 					<a class='post-author' href="#0">Неизвестный автор</a>
 				</p>
-				<p class='description__article__post-list'>
-					Подушки для дивана целесообразнее заказать в съемных чехлах
-					на молнии, если потребуется чистка подушек, проще снять чехлы, 
-					чем везти подушку в химчистку.
-				</p>
+				<div class='description__article__post-list'>
+					<p> Подушки для дивана целесообразнее заказать в съемных чехлах
+						на молнии, если потребуется чистка подушек, проще снять чехлы, 
+						чем везти подушку в химчистку. </p>
+				</div>
 			</div>
-		</article>
-		
+		</article>		
 	</main>
 	
 	<aside class='aside__page-content'>
@@ -314,11 +312,19 @@
 						<p class='post-date black'>14 июня 2019</p>
 						<a class='title__latest-post' href="#0">ЛУЧШИЕ ПРИЧЕСКИ ДЛЯ РАСПУЩЕННЫХ ВОЛОС</a>
 					</div>
-				</article>
-				
+				</article>				
 			</div>
-			
+				
+			<form class='search-form_aside'>
+				<input id='search-field' type='search'
+						class='search__field'
+						placeholder='Найти...'
+						name='query' required>
+				<button class='search__button'>Найти</button>
+			</form>			
 		</section>
+		
+		
 		
 	</aside>
 	

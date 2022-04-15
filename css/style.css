@@ -156,6 +156,7 @@
 
 .topic-article {
 	width: 24.8%;
+	max-height: 321px;
 	
 	padding: 16px 20px;
 	padding-top: 131px;
@@ -282,7 +283,13 @@
 }
 
 .content__article__post-list {
+	flex: auto;
 	padding-left: 30px;
+	display: flex;
+	flex-flow: column nowrap;	
+	box-sizing: border-box;
+	justify-content: flex-end;
+	position: relative;	
 }
 
 .title__article__post-list {
@@ -297,32 +304,36 @@
 
 .date-and-author {
 	margin-top: 20px;
-	padding-bottom: 16px;
 }
 
 .post-date {
 	font-family: "Open Sans Regular", sans-serif;
-	font-weight: 400;
 	font-size: 12px;
 	line-height: 40px;
+	font-weight: 400;
 	color: #888888;
 }
 
 .post-author {
 	font-family: "Open Sans Bold", sans-serif;
-	font-weight: bold;
 	font-size: 12px;
 	line-height: 40px;
+	font-weight: bold;
 	color: #000000;
 }
 
 .description__article__post-list {
-	margin-top: 22px;
+	display: block;
 	font-family: "Open Sans Regular", sans-serif;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 22px;
 	color: #0f0d0e;
+	margin-top: 36px;
+}
+
+.p-margin-top {
+	margin-top: 22px;
 }
 
 			/*	---------- 'ASIDE' ----------	*/
@@ -399,6 +410,23 @@
 	line-height: 18px;
 	color: #000000;	
 	text-transform: uppercase;
+}
+
+			/*	---------- 'ASIDE' ПОИСК ----------	*/
+.search-form_aside {
+	margin-top: 60px;
+	display: flex;
+	align-items: center;
+}
+
+#search-field {}
+
+.search__field {
+	flex-grow: 1;
+}
+
+.search__button {
+	flex: auto;
 }
 
 .page-footer {}
