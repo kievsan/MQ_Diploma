@@ -1,3 +1,5 @@
+@search-form_aside: #b59f5b;
+
 * {
 	margin: 0;
 	padding:0;
@@ -104,20 +106,24 @@
 	z-index: 5; 
 }
 
-.page-trend-section {
+				/*	---------- <page-trend-section> 'СЕЙЧАС В ТРЕНДЕ' ----------	*/
+.trend-section {
 	/*width: 690px;*/
+}
+.page-section {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.header__trend-section {
+				/*	---------- 'СЕЙЧАС В ТРЕНДЕ' <HEADER> ----------	*/
+.header__page-section {
 	color: #0f0d0e;
 	text-transform: uppercase;
 	background-color: #ffffff;
 	padding: 60px 0px 35px;
 }
 
-.header__trend-section:after {
+.header__page-section:after {
 	display: block;
 	background-color: #e1d9bd;
 	content: "";
@@ -128,7 +134,7 @@
 	margin-top: 10px;
 }
 
-.title__header__trend-section {
+.title__header__page-section {
 	display: block;
 	/*width: 690px;*/
 	margin-left: auto;
@@ -143,11 +149,11 @@
 	position: relative;
 }
 
-				/*	---------- СЕЙЧАС В ТРЕНДЕ section 'TOPIC' ----------	*/
+				/*	---------- 'СЕЙЧАС В ТРЕНДЕ' <TOPIC-ARTICLE> ----------	*/
 .topic__trend-section {
 	min-width: 1200px;
-	display: flex;
 	box-sizing: border-box;
+	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: stretch;
@@ -255,25 +261,28 @@
 
 			/*	---------- ОСНОВНАЯ ЧАСТЬ ----------	*/
 .page-content {
-	display: flex;
 	min-width: 1200px;
-	margin: 0px auto;
+	/*margin: 0px auto;
+	margin-top: 51px;*/
+	margin: 51px 14.75% 0 14.75%;
+	display: flex;
 	flex-flow: row nowrap;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: stretch;
+	/*box-sizing: border-box;*/
 }
 
 				/*	---------- СПИСОК СТАТЕЙ 'MAIN' ----------	*/
 .post-list__page-content {
-	width: 65%;
-	min-width: 780px;
+	max-width: 780px;
 	/*padding-top: count(64px - 13px);*/
-	padding-top: 51px;
-	margin-right: 5%;
-	
+	/*padding-top: 51px;*/
+	margin-right: 3.8%;
+	order: 0;
 }
 
 .menu__article {
+	margin-top: -2.5px;
 	margin-bottom: 13px;
 }
 
@@ -281,8 +290,11 @@
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: stretch;
-	/*margin-top: count(59px - 13px);*/
-	padding-bottom: 46px;
+}
+
+.article__post-list:nth-child(n + 2) {
+	margin-top: 60px;
+	
 }
 
 .preview__article__post-list {
@@ -296,10 +308,10 @@
 }
 
 .content__article__post-list {
+	/*display: flex;
 	flex: auto;
-	margin-left: 30px;
-	display: flex;
-	flex-flow: column nowrap;	
+	flex-flow: column nowrap;*/
+	margin-left: 30px;	
 	box-sizing: border-box;
 	justify-content: start;
 	position: relative;	
@@ -344,6 +356,7 @@
 	/*line-height: 40px;*/
 	font-weight: bold;
 	color: #000000;
+	flex-grow: 1;
 }
 
 .description__article__post-list {
@@ -354,6 +367,7 @@
 	line-height: 22px;
 	color: #0f0d0e;
 	/*margin-top: 50px;*/
+	/*flex-grow: 1;*/
 }
 
 .p-margin-top {
@@ -362,15 +376,12 @@
 
 			/*	---------- 'ASIDE' ----------	*/
 .aside__page-content {
-    width: 25%;
-	min-width: 280px;
+	width: 271px;
+	margin-left: 3.8%;
 	order: 1;
 }
 
-.latest-posts__aside {
-	/*padding-top: count(64px - 7.5px);*/
-	padding-top: 53.5px;
-}
+.latest-posts__aside {}
 
 .aside-header {
 	color: #0f0d0e;
@@ -402,16 +413,18 @@
 	position: relative;
 }
 
-.latest-post-list {
-	/*padding-top: count(30px - 14px);*/
-}
+.latest-post-list {}
 
 .latest-post {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: stretch;
-	/*margin-top: count(22px - 14px);*/
-	padding-bottom: 8px;
+	/*margin-bottom: 22px;*/
+}
+
+.latest-post:nth-child(n + 2) {
+	margin-top: 22px;
+	
 }
 
 .preview__latest-post {
@@ -427,8 +440,12 @@
 	margin-left: 20px;
 }
 
+.date__latest-post {
+	margin-top: -2.5px;
+}
+
 .header__latest-post {
-	margin-top: 7px;
+	margin-top: 3px;
 }
 
 .title__latest-post {
@@ -448,19 +465,146 @@
 .search-form_aside {
 	margin-top: 60px;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 }
 
-#search-field {}
+#search-field {
+	flex-grow: 1;
+	padding-left: 18px;
+    box-sizing: border-box;
+}
 
 .search__field {
-	flex-grow: 1;
+    border: none;
+	font-family: "Open Sans Regular", sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	color: black;
+	background-color: #f4f7f6;
 }
+
+.search__field:hover, .search__field:focus {
+  background-color: #b59f5b; /*@search-form_aside;*/
+  font-weight: bold;
+  color: #ffffff;
+  outline: none;
+  /*outline: 3px dotted #b59f5b;*/
+}
+
+/*#search-field::-webkit-input-placeholder {color: auto;}*/
+/*input::-webkit-input-placeholder {color: blue;}*/
+/*input:-moz-placeholder {color: black;}*/
+
+.search__field:hover + #search-field::-webkit-input-placeholder {
+	color: #ffffff;
+} /* Не сработало (белый текст "Найти..." при наведении */
 
 .search__button {
-	flex: auto;
+	flex: none;
+    box-sizing: border-box;
+    border: none;
+	width: 48px;
+	height: 48px;
+    cursor: pointer;
+	background-color: #b59f5b; /*@search-form_aside;*/
 }
 
+.search__button:hover, .search__button:focus {
+  background-color: #888888;
+}
+
+.search__button:focus {
+  outline: none;
+}
+
+.search__button:active {
+  box-shadow: 0 0 0 3px #b59f5b; /* @search-form_aside; /*lightskyblue;*/
+}
+
+svg.search__icon {
+	width: 18px;
+	height: 18px;
+	fill: #ffffff;
+}
+
+
+			/*	---------- 'SHOP-FOOTER' МАГАЗИН ----------	*/
+.shop-footer {
+	min-width: 1200px;
+	/*position: relative;*/
+	margin: 0 14.75%;
+}
+
+.goods__shop-footer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	box-sizing: border-box;
+  
+	position: relative;
+}
+
+			/*	---------- 'МАГАЗИН' товары <PRODUCT> ----------	*/
+
+.product {
+	/*max-width: 33%;*/
+	/*min-height: 321px;*/
+	
+	padding: 16px 20px;
+	/*padding-top: 131px;*/
+	
+	background-color: #2c4641;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;	
+	
+	display: flex;
+	align-items: flex-end;
+	
+	position: relative;
+}
+
+.preview-1__product {
+	background-image: url(../img/shop-item-desk1.jpg);
+}
+
+.preview-2__product {
+	background-image: url(../img/shop-item-desk2.jpg);
+}
+
+.preview-3__product {
+	background-image: url(../img/shop-item-desk3.jpg);
+}
+
+.content__product { 
+	display: block;
+	border: 3px solid #b59f5b;
+	padding: 36px 32px;
+	
+	text-transform: uppercase;
+	font-family: "Open Sans Bold", sans-serif;
+	font-weight: bold;
+	
+	flex: auto;
+	position: relative;
+	z-index: 5;
+}
+
+.header__product {}
+
+.title__product {
+	font-size: 20px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.link__title__product {
+	color: inherit;
+}
+
+
+			/*	---------- 'FOOTER' ПОДВАЛ страницы ----------	*/
 .page-footer {}
 
 @font-face {

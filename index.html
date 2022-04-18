@@ -39,11 +39,11 @@
     <h1 class="title__page-header">Блог о творчестве, спорте, и образе жизни</h1>    
 </header>
 
-<section class="page-trend-section">
-	<header class="header__trend-section">
-		<h2 class="title__header__trend-section">СЕЙЧАС В ТРЕНДЕ</h2>
+<section class="trend-section page-section">
+	<header class="header__page-section">
+		<h2 class="title__header__page-section">Сейчас в тренде</h2>
 	</header>
-		
+	
 	<div class='topic__trend-section'>
 		<article class='topic-article preview-1__topic-article'>
 			<div class='content__topic-article'>
@@ -180,7 +180,7 @@
 				</header>
 				<p class='date-and-author'>
 					<span class='post-date'>10 июня 2019 &ensp; &nbsp;</span>
-					<a class='post-author' href="#0">Ну прям совсем-совсем Неизвестный автор</a>
+					<a class='post-author' href="#0">Ну прям уж совсем-совсем Неизвестный автор</a>
 				</p>
 				<div class='description__article__post-list'>
 					<p> Расскажем, какие упражнения выбрать и как сделать коврик 
@@ -301,14 +301,14 @@
 							alt='Новостная картинка'>
 					</picture>
 					<div class='content__latest-post'>
-						<p class='post-date black'>14 июня 2019</p>
+						<p class='post-date black date__latest-post'>14 июня 2019</p>
 						<header class='header__latest-post'>
 							<h3 class='title__latest-post'>				
 								<a class='link__title__latest-post' href="#0">
-									10 мест, ради которых стоит проснуться на рассвете</a></h3>
+									10 мест, ради которых стоит проснуться</a></h3>
 						</header>
 					</div>
-				</article>				
+				</article>
 				<article class='latest-post'>
 					<picture class='preview__latest-post'>
 						<img class='img__latest-post' 
@@ -316,7 +316,7 @@
 							alt='Новостная картинка'>
 					</picture>
 					<div class='content__latest-post'>
-						<p class='post-date black'>14 июня 2019</p>
+						<p class='post-date black date__latest-post'>14 июня 2019</p>
 						<header class='header__latest-post'>
 							<h3 class='title__latest-post'>				
 								<a class='link__title__latest-post' href="#0">
@@ -331,7 +331,7 @@
 							alt='Новостная картинка'>
 					</picture>
 					<div class='content__latest-post'>
-						<p class='post-date black'>14 июня 2019</p>
+						<p class='post-date black date__latest-post'>14 июня 2019</p>
 						<header class='header__latest-post'>
 						<header class='header__latest-post'>
 							<h3 class='title__latest-post'>				
@@ -347,7 +347,7 @@
 							alt='Новостная картинка'>
 					</picture>
 					<div class='content__latest-post'>
-						<p class='post-date black'>14 июня 2019</p>
+						<p class='post-date black date__latest-post'>14 июня 2019</p>
 						<header class='header__latest-post'>
 							<h3 class='title__latest-post'>				
 								<a class='link__title__latest-post' href="#0">
@@ -362,7 +362,7 @@
 							alt='Новостная картинка'>
 					</picture>
 					<div class='content__latest-post'>
-						<p class='post-date black'>14 июня 2019</p>
+						<p class='post-date black date__latest-post'>14 июня 2019</p>
 						<header class='header__latest-post'>
 						<header class='header__latest-post'>
 							<h3 class='title__latest-post'>				
@@ -372,22 +372,75 @@
 					</div>
 				</article>				
 			</div>
-				
+			
 			<form class='search-form_aside'>
 				<input id='search-field' type='search'
 						class='search__field'
 						placeholder='Найти...'
 						name='query' required>
-				<button class='search__button'>Найти</button>
+				<button class='search__button'>
+					<svg class='search__icon' viewBox='0 0 512 512'>
+						<path d='M373.403 339.292l-.29.344.312.324 121.857 126.737c10.117 10.524 9.782 
+								27.302-.733 37.42l.347.36-.347-.36c-4.948 4.763-11.466 7.383-18.338 
+								7.383-7.261 0-14.034-2.884-19.072-8.116L334.357 
+								375.686l-.297-.309-.351.246c-34.78 24.442-75.457 37.317-118.145 37.317-113.708 
+								0-206.22-92.513-206.22-206.22C9.344 93.012 101.856.5 215.564.5c113.707 
+								0 206.22 92.512 206.22 206.22 0 48.668-17.125 95.416-48.381 
+								132.572zm-4.546-132.572c0-84.528-68.765-153.293-153.293-153.293S62.271 
+								122.192 62.271 206.72s68.765 153.293 153.293 
+								153.293 153.293-68.765 153.293-153.293z'>
+						</path>
+					</svg>
+				</button>
 			</form>			
 		</section>
 		
 		
 		
 	</aside>
-	
 </div>
-  
+
+
+<section class="shop-footer page-section">		
+	<header class="header__page-section">
+		<h2 class="title__header__page-section">Наши изделия</h2>
+	</header>
+	<div class='goods__shop-footer'>
+		<article class='product preview-1__product'>
+			<div class='content__product'>
+				<header class='header__product'>
+					<h2 class='title__product'>				
+						<a class='link__title__product' href="#0">
+							Подушки на диван</a></h2>
+				</header>
+			</div>
+		</article>
+		<article class='product preview-2__product'>
+			<div class='content__topic-article'>
+				<header class='header__topic-article'>
+					<h2 class='title__topic-article'>				
+						<a class='link__title__topic-article' href="#0">
+							Кукла "Зайчик"</a></h2>
+				</header>
+			</div>
+		</article>
+		<article class='product preview-3__product'>
+			<div class='content__topic-article'>
+				<header class='header__topic-article'>
+					<h2 class='title__topic-article'>				
+						<a class='link__title__topic-article' href="#0">
+							Шестиугольная рамка</a></h2>
+				</header>
+			</div>
+		</article>
+		
+	</div>
+</section>
+	
+
+
+			<!--
+			-->
 <footer class="footer__page">
     
 </footer>
