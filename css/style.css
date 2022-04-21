@@ -1,7 +1,13 @@
 
 :root {
-	--safe-width: 1200px;
-	--color-search-form_aside: #b59f5b;
+	--width-desktop: 1200px;
+	--width-tablet: 768px;
+	--width-mobile: 360px;
+	--safe-width-1-desktop: 960px;
+	--safe-width-1-tablet: 768px;
+	--safe-width-1-mobile: 360px;
+	--special-color-1: #b59f5b; 
+	--special-color-2: #0f0d0e;
 }
 
 * {
@@ -14,11 +20,11 @@
 
 .body {}
 
-.black {color: #000000;}
+.black {color: black;}
 
 .page-header {
 	/*width: 100%;*/
-	min-width: var(--safe-width); /*1200px;*/
+	min-width: var(--width-desktop);
 	padding-top: 28px;
 	padding-bottom: 123px;
 	background-color: #2c4641;
@@ -106,7 +112,7 @@
 				/*	---------- <page-trend-section> 'СЕЙЧАС В ТРЕНДЕ' ----------	*/
 .trend-section {
 	/*width: 100%;*/
-	min-width: var(--safe-width);
+	min-width: var(--width-desktop);
 }
 
 .page-section {
@@ -116,7 +122,7 @@
 
 				/*	---------- 'СЕЙЧАС В ТРЕНДЕ' <HEADER> ----------	*/
 .header__page-section {
-	color: #0f0d0e;
+	color: var(--special-color-2);
 	text-transform: uppercase;
 	background-color: #ffffff;
 	padding: 60px 0px 35px;
@@ -205,7 +211,7 @@
 
 .content__topic-article { 
 	display: block;
-	border: 3px solid var(--color-search-form_aside); /*#b59f5b;*/
+	border: 3px solid var(--special-color-1); /*#b59f5b;*/
 	padding: 36px 32px;
 	
 	text-transform: uppercase;
@@ -253,13 +259,19 @@
 	font-size: 14px;
 	/*line-height: 40px;*/
 	font-style: normal;
-	color: var(--color-search-form_aside); /*#b59f5b;*/
+	color: var(--special-color-1); /*#b59f5b;*/
 }
 
 			/*	---------- ОСНОВНАЯ ЧАСТЬ ----------	*/
 .content {
-	width: var(--safe-width);
+	max-width: var(--width-desktop);
+	min-width: var(--safe-width-1-desktop); 
 	margin-top: 51px;
+	/* ???: */
+	/*display: flex;
+	flex-direction: column;
+	aligne-items: stretch;
+	justify-content: flex-start;*/
 }
 
 .page-content {
@@ -320,7 +332,7 @@
 	font-size: 20px;
 	line-height: 24px;
 	font-style: normal;
-	color: #0f0d0e;
+	color: var(--special-color-2);
 }
 
 .link__title__article__post-list {
@@ -359,7 +371,7 @@
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 22px;
-	color: #0f0d0e;
+	color: var(--special-color-2);
 }
 
 .p-margin-top {
@@ -377,7 +389,7 @@
 .latest-posts__aside {}
 
 .aside-header {
-	color: #0f0d0e;
+	color: var(--special-color-2);
 	text-transform: uppercase;
 	background-color: #ffffff;	
 }
@@ -476,7 +488,7 @@
 }
 
 .search__field:hover, .search__field:focus {
-  background-color: var(--color-search-form_aside); /*#b59f5b;*/
+  background-color: var(--special-color-1); /*#b59f5b;*/
   font-weight: bold;
   color: #ffffff;
   outline: none;
@@ -498,7 +510,7 @@
 	width: 48px;
 	height: 48px;
     cursor: pointer;
-	background-color: var(--color-search-form_aside); /*#b59f5b;*/
+	background-color: var(--special-color-1); /*#b59f5b;*/
 }
 
 .search__button:hover, .search__button:focus {
@@ -510,7 +522,7 @@
 }
 
 .search__button:active {
-  box-shadow: 0 0 0 3px var(--color-search-form_aside); /*#b59f5b; /*lightskyblue;*/
+  box-shadow: 0 0 0 3px var(--special-color-1); /*#b59f5b; /*lightskyblue;*/
 }
 
 svg.search__icon {
@@ -522,24 +534,88 @@ svg.search__icon {
 
 			/*	---------- 'SHOP-FOOTER' МАГАЗИН ----------	*/
 .shop-content {
-	max-width: var(--safe-width);
+	/*max-width: var(--width-desktop);
+	min-width: var(--safe-width-1-desktop); */
 }
 
-.goods__shop-conent {
+.goods__shop-content {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: stretch;
 	box-sizing: border-box;
   
-	position: relative;
+	/*position: relative;*/
 }
 
 			/*	---------- 'МАГАЗИН' товары <PRODUCT> ----------	*/
 
 .product {
-	/*min-height: 321px;*/
+	width: 30%;
+	background-color: white;
+	box-sizing: border-box;
+	/*border: 3px solid #d3c59d;*/
 	
+	display: flex;
+	flex-direction: column;
+}
+
+.product:nth-child(3n + 2) {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  
+.product-imgbox {
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+
+.product-img {
+	display: block;
+	width: 100%;
+}
+
+.product-body {
+	box-sizing: border-box;
+	margin-top: -30px;
+	padding: 55px 20px 26px;
+	outline: 3px solid #d3c59d;
+	/*outline-offset: 20px;*/
+	flex-grow: 1;
+}
+
+.product-content {
+	color: var(--special-color-2);
+}
+
+.product-title {
+	font-family: "Open Sans Bold", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.product-description {	
+	font-family: "Open Sans Regular", sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.p__product-description {
+	margin-top: 1px;
+}
+
+.link__product-description {
+	color: var(--special-color-1);
+}
+		
+			
+/***
+.product {
+	flex-grow: 1;
+	width: 25%;
 	padding: 16px 20px;
 	
 	background-color: #2c4641;
@@ -567,7 +643,7 @@ svg.search__icon {
 
 .content__product { 
 	display: block;
-	border: 3px solid var(--color-search-form_aside); /*#b59f5b;*/
+	border: 3px solid var(--special-color-1);
 	padding: 36px 32px;
 	
 	text-transform: uppercase;
@@ -590,7 +666,7 @@ svg.search__icon {
 .link__title__product {
 	color: inherit;
 }
-
+*/
 
 			/*	---------- 'FOOTER' ПОДВАЛ страницы ----------	*/
 .page-footer {}
