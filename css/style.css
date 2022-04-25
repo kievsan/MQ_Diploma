@@ -8,6 +8,7 @@
 	--safe-width-1-mobile: 360px;
 	--special-color-1: #b59f5b; 
 	--special-color-2: #0f0d0e;
+	--special-color-3: #ebe7d7;
 }
 
 * {
@@ -479,19 +480,21 @@
 }
 
 .search__field {
+	outline: none;	
     border: none;
 	font-family: "Open Sans Regular", sans-serif;
 	font-weight: normal;
 	font-size: 13px;
 	color: black;
 	background-color: #f4f7f6;
+    border-bottom: 1px solid var(--special-color-3);
 }
 
 .search__field:hover, .search__field:focus {
-  background-color: var(--special-color-1);
-  font-weight: bold;
-  color: #ffffff;
-  outline: none;
+  /*background-color: var(--special-color-1);
+	font-weight: bold;
+	color: #ffffff;
+	outline: none;
   /*outline: 3px dotted #b59f5b;*/
 }
 
@@ -517,6 +520,7 @@
 	height: 48px;
     cursor: pointer;
 	background-color: var(--special-color-1);
+    border-bottom: 1px solid var(--special-color-3);
 }
 
 .search__button:hover, .search__button:focus {
@@ -631,7 +635,6 @@ svg.search__icon {
 .product-prices {
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
-	/*line-height: 24px;*/
 	color: var(--special-color-2);
 }
 
