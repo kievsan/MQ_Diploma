@@ -134,10 +134,10 @@
 	background-color: #e1d9bd;
 	content: "";
 	width: 66px;
-	height: 3px;	
+	height: 3px;
+	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10px;
 }
 
 .title__header__page-section {
@@ -264,15 +264,10 @@
 }
 
 			/*	---------- ОСНОВНАЯ ЧАСТЬ ----------	*/
-.content {
+.page-wrapper {
 	max-width: var(--width-desktop);
 	min-width: var(--safe-width-1-desktop); 
 	margin-top: 51px;
-	/* ???: */
-	/*display: flex;
-	flex-direction: column;
-	aligne-items: stretch;
-	justify-content: flex-start;*/
 }
 
 .page-content {
@@ -665,13 +660,67 @@ svg.search__icon {
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
 	font-size: 14px;
-	/*line-height: 40px;*/
 	color: white;
 }
 
 
 			/*	---------- 'FOOTER' ПОДВАЛ страницы ----------	*/
-.page-footer {}
+.page-footer {
+	display: block;
+	margin-top: 65px;
+}
+
+			/*	---------- СОЦ.СЕТИ ----------	*/
+.social-top {
+	padding: 30px 0;
+	display: flex;
+	justify-content: center;
+	background-color: #f4f7f6;
+}
+
+#social-icon {
+	width: 20px;
+	height: 20px;
+	fill: black;
+}
+
+#social-icon:nth-child(n + 2) {
+	margin-left: 30px;
+}
+
+svg.social-icon-twitter {
+	width: 25px;
+	height: 21px;
+}
+
+svg.social-icon-pinterest {
+	width: 16px;
+}
+
+svg.social-icon-facebook {
+	width: 12px;
+}
+
+svg.social-icon-instagram {
+}
+
+svg.social-icon-tumblr {
+	width: 13px;
+}
+
+			/*	---------- copyright ----------	*/
+.footer-bottom {
+	margin-top: 65px;
+	text-align: center;
+}
+
+.copyright {
+	font-family: "Open Sans Bold", sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 40px;
+	color: #999999;
+}
 
 
 			/*	---------- ШРИФТЫ ----------	*/
