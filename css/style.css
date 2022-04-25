@@ -344,7 +344,7 @@
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-start;
-	min-height: 67px;
+	/*min-height: 67px;*/
 }
 
 .post-date {
@@ -488,7 +488,7 @@
 }
 
 .search__field:hover, .search__field:focus {
-  background-color: var(--special-color-1); /*#b59f5b;*/
+  background-color: var(--special-color-1);
   font-weight: bold;
   color: #ffffff;
   outline: none;
@@ -498,10 +498,16 @@
 /*#search-field::-webkit-input-placeholder {color: auto;}*/
 /*input::-webkit-input-placeholder {color: blue;}*/
 /*input:-moz-placeholder {color: black;}*/
+/*.search__field:hover + #search-field::-webkit-input-placeholder {color: #ffffff;}*/
 
-.search__field:hover + #search-field::-webkit-input-placeholder {
-	color: #ffffff;
-} /* Не сработало (белый текст "Найти..." при наведении */
+.label-hidden {
+    font-size: 0;
+	
+	/*position: absolute;
+     top: -100%;*/
+	
+	/*color: transparent;*/
+}
 
 .search__button {
 	flex: none;
@@ -510,11 +516,11 @@
 	width: 48px;
 	height: 48px;
     cursor: pointer;
-	background-color: var(--special-color-1); /*#b59f5b;*/
+	background-color: var(--special-color-1);
 }
 
 .search__button:hover, .search__button:focus {
-  background-color: #888888;
+  background-color: #323232; /*#888888;*/
 }
 
 .search__button:focus {
@@ -522,7 +528,7 @@
 }
 
 .search__button:active {
-  box-shadow: 0 0 0 3px var(--special-color-1); /*#b59f5b; /*lightskyblue;*/
+  /*box-shadow: 0 0 0 3px var(--special-color-1);*/
 }
 
 svg.search__icon {
@@ -631,7 +637,6 @@ svg.search__icon {
 
 .product-price {
 	font-size: 20px;
-	display: flex;
 }
 
 .value__product-price {
@@ -640,11 +645,10 @@ svg.search__icon {
 .old__product-price {
 	text-decoration: line-through;
 	font-size: 14px;
-	display: flex;
 }
 
 .rub {
-	margin-left: .2em;
+	margin-left: 4px;
 }
 
 .product-button {
@@ -658,7 +662,7 @@ svg.search__icon {
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
 	font-size: 14px;
-	line-height: 40px;
+	/*line-height: 40px;*/
 	color: white;
 }
 

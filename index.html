@@ -379,7 +379,9 @@
 						class='search__field'
 						placeholder='Найти...'
 						name='query' required>
-				<button class='search__button'>
+					<label for='search-field' class='label-hidden'>Поле ввода поиска поста</label>
+				<button id='search-button' class='search__button'>
+					<label for='search-button' class='label-hidden'>Кнопка поиска поста</label>
 					<svg class='search__icon' viewBox='0 0 512 512'>
 						<path d='M373.403 339.292l-.29.344.312.324 121.857 126.737c10.117 10.524 9.782 
 								27.302-.733 37.42l.347.36-.347-.36c-4.948 4.763-11.466 7.383-18.338 
@@ -408,11 +410,11 @@
 	</header>
 	<div class='goods__shop-content'>
 		<article class='product'>
-			<div class='product-imgbox'>
+			<picture class='product-imgbox'>
 				<img class='product-img'
 					src="img/shop-item-desk1.jpg" 
 					alt="Превью товара 'Подушки на диван'">
-			</div>			
+			</picture>			
 			<div class="product-body">
 				<div class="product-content">
 					<h2 class="product-title">
@@ -423,17 +425,17 @@
 							Набор из двух подушек с модными принтами. Видео о создании 
 							<a class='link__product-description' href="#0">здесь</a>.</p>
 					</div>
-				</div>				
+				</div>
 				<footer class="product-footer">
 					<div class="product-prices">
-						<span class="old__product-price">
+						<div class="old__product-price">
 							<span class="value__product-price">1000</span>
 							<span class="rub">₽</span>
-						</span>
-						<span class="product-price">
+						</div>
+						<div class="product-price">
 							<span class="value__product-price">800</span>
 							<span class="rub">₽</span>
-						</span>
+						</div>
 					</div>
 					<button class="product-button" type="button">В магазин</button>
 				</footer>
@@ -441,11 +443,11 @@
 		</article>
 		
 		<article class='product'>
-			<div class='product-imgbox'>
+			<picture class='product-imgbox'>
 				<img class='product-img'
 					src="img/shop-item-desk2.jpg" 
 					alt="Превью товара 'Кукла "Зайчик"'">
-			</div>				
+			</picture>				
 			<div class="product-body">
 				<div class="product-content">
 					<h2 class="product-title">
@@ -461,10 +463,10 @@
 				
 				<footer class="product-footer">
 					<div class="product-prices">
-						<span class="product-price">
+						<div class="product-price">
 							<span class="value__product-price">3500</span>
 							<span class="rub">₽</span>
-						</span>
+						</div>
 					</div>
 					<button class="product-button" type="button">В магазин</button>
 				</footer>
@@ -472,11 +474,11 @@
 		</article>
 		
 		<article class='product'>
-			<div class='product-imgbox'>
+			<picture class='product-imgbox'>
 				<img class='product-img'
 					src="img/shop-item-desk3.jpg" 
 					alt="Превью товара 'Шестиугольная рамка'">
-			</div>			
+			</picture>			
 			<div class="product-body">
 				<div class="product-content">
 					<h2 class="product-title">
@@ -491,14 +493,14 @@
 				</div>			
 				<footer class="product-footer">
 					<div class="product-prices">
-						<span class="old__product-price">
+						<div class="old__product-price">
 							<span class="value__product-price">500</span>
 							<span class="rub">₽</span>
-						</span>
-						<span class="product-price">
+						</div>
+						<div class="product-price">
 							<span class="value__product-price">400</span>
 							<span class="rub">₽</span>
-						</span>
+						</div>
 					</div>
 					<button class="product-button" type="button">В магазин</button>
 				</footer>
