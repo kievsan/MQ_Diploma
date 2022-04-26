@@ -462,7 +462,7 @@
 }
 
 			/*	---------- 'ASIDE' ПОИСК ----------	*/
-.search-form_aside {
+.search-form__aside {
 	margin-top: 60px;
 	display: flex;
 	align-items: stretch;
@@ -470,70 +470,45 @@
 
 #search-field {
 	flex-grow: 1;
-	padding-left: 18px;
-    box-sizing: border-box;
 }
 
-.search__field {
-	outline: none;	
-    border: none;
-	font-family: "Open Sans Regular", sans-serif;
-	font-weight: normal;
-	font-size: 13px;
-	color: black;
-	background-color: #f4f7f6;
-    border-bottom: 1px solid var(--special-color-3);
-}
-
-.search__field:hover, .search__field:focus {
-  /*background-color: var(--special-color-1);
-	font-weight: bold;
-	color: #ffffff;
-	outline: none;
-  /*outline: 3px dotted #b59f5b;*/
-}
-
-/*#search-field::-webkit-input-placeholder {color: auto;}*/
-/*input::-webkit-input-placeholder {color: blue;}*/
-/*input:-moz-placeholder {color: black;}*/
-/*.search__field:hover + #search-field::-webkit-input-placeholder {color: #ffffff;}*/
-
-.label-hidden {
-    font-size: 0;
-	
-	/*position: absolute;
-     top: -100%;*/
-	
-	/*color: transparent;*/
-}
-
-.search__button {
-	flex: none;
-    box-sizing: border-box;
-    border: none;
+#search-button {
 	width: 48px;
 	height: 48px;
-    cursor: pointer;
-	background-color: var(--special-color-1);
-    border-bottom: 1px solid var(--special-color-3);
-}
-
-.search__button:hover, .search__button:focus {
-  background-color: #323232; /*#888888;*/
-}
-
-.search__button:focus {
-  outline: none;
-}
-
-.search__button:active {
-  /*box-shadow: 0 0 0 3px var(--special-color-1);*/
 }
 
 svg.search__icon {
 	width: 18px;
 	height: 18px;
-	fill: #ffffff;
+	fill: white;
+}
+
+
+			/*	---------- 'SUBSCRIBE-ASIDE' ПОДПИСКА ----------	*/
+.subscribe__aside {
+	margin-top: 53px;
+}
+
+.subscribe-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.subscribe-form-field:nth-child(n + 2) {
+	margin-top: 18px;	
+}
+
+#email-field {
+}
+
+#subscribe-button {
+	padding: 14.5px 0;
+}
+
+
+			/*	---------- 'TAGS-ASIDE' ТЕГИ ----------	*/
+.tags__aside {
+	margin-top: 53px;
 }
 
 
@@ -598,6 +573,7 @@ svg.search__icon {
 	font-size: 20px;
 	line-height: 24px;
 	text-transform: uppercase;
+	margin-bottom: 7px;
 }
 
 .link__product-title {
@@ -649,18 +625,8 @@ svg.search__icon {
 	margin-left: 4px;
 }
 
-.product-button {
-	border: none;
-	background-color: var(--special-color-1);
-	padding: 5px 30px;
-
-	cursor: pointer;
-	text-transform: uppercase;
-
-	font-family: "Open Sans Bold", sans-serif;
-	font-weight: bold;
-	font-size: 14px;
-	color: white;
+#product-button {
+	padding: 14.5px 30px;
 }
 
 
@@ -721,6 +687,72 @@ svg.social-icon-tumblr {
 	line-height: 40px;
 	color: #999999;
 }
+
+
+			/*	---------- TOOLS ----------	*/
+
+.button__tools {
+    border: none;
+	outline: none;
+	box-sizing: border-box;
+    cursor: pointer;
+	background-color: var(--special-color-1);
+	color: white;
+	text-align: center;
+	font-family: "Open Sans Bold", sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	/*line-height: 40px;*/
+	text-transform: uppercase;
+}
+
+.button__tools:hover, 
+.button__tools:focus {
+	background-color: #323232;
+}
+
+.button__tools:active {
+  /*box-shadow: 0 0 0 3px var(--special-color-1);*/
+}
+
+.link__button__tools {
+	color: white;
+}
+
+.label-hidden__tools { /* скрытая метка */
+    font-size: 0;
+	/*color: transparent;*/
+    /*position: absolute;
+    top: -100%;*/
+    /*top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;*/
+}
+
+
+.input-text-field__tools {
+	outline: none;	
+    border: none;
+    box-sizing: border-box;
+	font-family: "Open Sans Regular", sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	color: black;
+	background-color: #f4f7f6;
+	padding: 15px 18px;
+}
+
+.input-text-field__tools:hover, 
+.input-text-field__tools:focus, 
+.input-text-field__tools:active {
+    border-bottom: 1px solid var(--special-color-3);
+}
+
+/*#search-field::-webkit-input-placeholder {color: auto;}*/
+/*input::-webkit-input-placeholder {color: blue;}*/
+/*input:-moz-placeholder {color: black;}*/
+/*.search__field:hover + #search-field::-webkit-input-placeholder {color: #ffffff;}*/
 
 
 			/*	---------- ШРИФТЫ ----------	*/
