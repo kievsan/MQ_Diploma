@@ -477,11 +477,20 @@
 	width: 48px;
 	height: 48px;
 }
-
+/*
 svg.search__icon {
 	width: 18px;
 	height: 18px;
 	fill: white;
+}
+*/
+.search__icon {
+	width: 18px;
+	height: 18px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../svg/search.svg);
+	z-index: 5;
 }
 
 
@@ -520,15 +529,20 @@ svg.search__icon {
 	box-sizing: border-box;	
 }
 
-#tag-button: {
-}
-
-.one-tag__aside {
+.tag-button {
+	display: block;
 	box-sizing: border-box;
 	padding: 5px 13px;
 	border: 3px solid #eeeeee;
     cursor: pointer;
-	background-color: white;
+}
+
+.one-tag__aside {	
+	font-family: "Open Sans Bold", sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: var(--special-color-2);
+	text-transform: uppercase;
 }
 
 .one-tag__aside:hover, 
@@ -551,20 +565,6 @@ svg.search__icon {
 
 .one-tag__aside:nth-child(5) { /* 4,7 */
 	margin-top: 6px;
-}
-
-.link__one-tag {
-	font-family: "Open Sans Bold", sans-serif;
-	font-weight: bold;
-	font-size: 12px;
-	color: var(--special-color-2);
-	text-transform: uppercase;
-	
-}
-
-.link__one-tag:hover, 
-.link__one-tag:focus {
-	outline: none;
 }
 
 
@@ -679,7 +679,8 @@ svg.search__icon {
 	margin-left: 4px;
 }
 
-#product-button {
+.product-button {
+	display: block;
 	padding: 14.5px 30px;
 }
 
@@ -698,16 +699,47 @@ svg.search__icon {
 	background-color: #f4f7f6;
 }
 
-#social-icon {
+.social-icon {
 	width: 20px;
 	height: 20px;
-	fill: black;
+	/*fill: black;*/
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
 
-#social-icon:nth-child(n + 2) {
+.social-icon:nth-child(n + 2) {
 	margin-left: 30px;
 }
 
+#social-icon-twitter {
+	width: 25px;
+	height: 21px;
+	background-image: url(../svg/logo-1-twitter.svg);
+}
+
+#social-icon-pinterest {
+	width: 16px;
+	background-image: url(../svg/logo-2-pinterest.svg);
+}
+
+#social-icon-facebook {
+	width: 12px;
+	background-image: url(../svg/logo-3-facebook.svg);
+}
+
+#social-icon-instagram {
+	width: 20px;
+	background-image: url(../svg/logo-4-instagram.svg);
+}
+
+#social-icon-tumblr {
+	width: 13px;
+	background-image: url(../svg/logo-5-tumblr.svg);
+}
+
+/*
 svg.social-icon-twitter {
 	width: 25px;
 	height: 21px;
@@ -727,6 +759,7 @@ svg.social-icon-instagram {
 svg.social-icon-tumblr {
 	width: 13px;
 }
+*/
 
 			/*	---------- copyright ----------	*/
 .footer-bottom {
