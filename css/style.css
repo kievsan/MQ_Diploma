@@ -9,6 +9,7 @@
 	--special-color-1: #b59f5b; 
 	--special-color-2: #0f0d0e;
 	--special-color-3: #ebe7d7;
+	--aside-space-between: 53px;
 }
 
 * {
@@ -486,7 +487,7 @@ svg.search__icon {
 
 			/*	---------- 'SUBSCRIBE-ASIDE' ПОДПИСКА ----------	*/
 .subscribe__aside {
-	margin-top: 53px;
+	margin-top: var(--aside-space-between);
 }
 
 .subscribe-form {
@@ -495,7 +496,7 @@ svg.search__icon {
 }
 
 .subscribe-form-field:nth-child(n + 2) {
-	margin-top: 18px;	
+	margin-top: 18px;
 }
 
 #email-field {
@@ -508,7 +509,62 @@ svg.search__icon {
 
 			/*	---------- 'TAGS-ASIDE' ТЕГИ ----------	*/
 .tags__aside {
-	margin-top: 53px;
+	margin-top: var(--aside-space-between);
+}
+
+.tags-list__aside {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: start;
+	align-items: stretch;
+	box-sizing: border-box;	
+}
+
+#tag-button: {
+}
+
+.one-tag__aside {
+	box-sizing: border-box;
+	padding: 5px 13px;
+	border: 3px solid #eeeeee;
+    cursor: pointer;
+	background-color: white;
+}
+
+.one-tag__aside:hover, 
+.one-tag__aside:focus {
+	border: 3px solid var(--special-color-1);
+	outline: none;
+}
+
+.one-tag__aside:nth-child(n + 2) {
+	margin-left: 5px;
+}
+
+.one-tag__aside:nth-child(n + 4) {
+	margin-top: 6px;
+}
+
+.one-tag__aside:nth-child(3n + 4) { /* 4,7 */
+	margin-left: 0;
+}
+
+.one-tag__aside:nth-child(5) { /* 4,7 */
+	margin-top: 6px;
+}
+
+.link__one-tag {
+	font-family: "Open Sans Bold", sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: var(--special-color-2);
+	text-transform: uppercase;
+	
+}
+
+.link__one-tag:hover, 
+.link__one-tag:focus {
+	outline: none;
 }
 
 
@@ -524,8 +580,6 @@ svg.search__icon {
 	justify-content: space-between;
 	align-items: stretch;
 	box-sizing: border-box;
-  
-	/*position: relative;*/
 }
 
 			/*	---------- 'МАГАЗИН' товары <PRODUCT> ----------	*/
@@ -717,6 +771,11 @@ svg.social-icon-tumblr {
 
 .link__button__tools {
 	color: white;
+}
+
+.link__button__tools:hover, 
+.link__button__tools:focus {
+	outline: none;
 }
 
 .label-hidden__tools { /* скрытая метка */
