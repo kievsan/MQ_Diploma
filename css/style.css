@@ -570,11 +570,11 @@ svg.search__icon {
 
 
 			/*	---------- 'CATEGORIES' ТЕМЫ ----------	*/
-.categories__aside {
+.themes__aside {
 	margin-top: var(--aside-space-between);
 }
 
-.categories-box__aside {
+.categories__aside {
 	box-sizing: border-box;
 }
 
