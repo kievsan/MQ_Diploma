@@ -527,7 +527,7 @@ svg.search__icon {
 	flex-flow: row wrap;
 	justify-content: start;
 	align-items: stretch;
-	box-sizing: border-box;	
+	box-sizing: border-box;
 }
 
 .tag-button {
@@ -574,7 +574,9 @@ svg.search__icon {
 	margin-top: var(--aside-space-between);
 }
 
-.categories-menu__aside {}
+.categories-menu__aside {
+	box-sizing: border-box;
+}
 
 .categories-menu {
 	display: flex;
