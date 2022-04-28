@@ -9,6 +9,7 @@
 	--special-color-1: #b59f5b; 
 	--special-color-2: #0f0d0e;
 	--special-color-3: #ebe7d7;
+	--border-color-1: #eeeeee;
 	--aside-space-between: 53px;
 }
 
@@ -533,11 +534,11 @@ svg.search__icon {
 	display: block;
 	box-sizing: border-box;
 	padding: 5px 13px;
-	border: 3px solid #eeeeee;
+	border: 3px solid var(--border-color-1);
     cursor: pointer;
 }
 
-.one-tag__aside {	
+.one-tag__aside {
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
 	font-size: 12px;
@@ -565,6 +566,56 @@ svg.search__icon {
 
 .one-tag__aside:nth-child(5) { /* 4,7 */
 	margin-top: 6px;
+}
+
+
+			/*	---------- 'CATEGORIES' ТЕМЫ ----------	*/
+.categories__aside {
+	margin-top: var(--aside-space-between);
+}
+
+.categories-menu__aside {}
+
+.categories-menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.category {
+	border-bottom: 1px solid var(--border-color-1);
+	padding-bottom: 15px;
+}
+
+.category:nth-child(n + 2) {
+	padding-top: 15px;
+}
+
+.menu-link__category {
+	font-family: "Open Sans Bold", sans-serif;
+	font-weight: bold;
+	position: relative;
+}
+
+.name__category {
+	text-transform: capitalize;
+	font-size: 14px;
+	color: black;
+}
+
+/*:focus:not(:focus-visible) { outline: none; }*/
+
+.name__category:hover, 
+.name__category:focus  {
+	color: var(--special-color-1);
+	outline: none;
+}
+
+.posts-number__category {
+	font-size: 12px;
+	color: var(--special-color-1);
+	position: absolute;
+	margin-left: 5px;
+	top: 0;
 }
 
 
@@ -760,6 +811,7 @@ svg.social-icon-tumblr {
 	width: 13px;
 }
 */
+
 
 			/*	---------- copyright ----------	*/
 .footer-bottom {
