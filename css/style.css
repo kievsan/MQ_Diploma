@@ -574,11 +574,11 @@ svg.search__icon {
 	margin-top: var(--aside-space-between);
 }
 
-.categories-menu__aside {
+.categories-box__aside {
 	box-sizing: border-box;
 }
 
-.categories-menu {
+.categories-menu__aside {
 	display: flex;
 	flex-direction: column;
 }
