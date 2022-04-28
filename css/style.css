@@ -242,7 +242,7 @@
 	margin-bottom: 13px;
 }
 
-.categories-menu {
+.categories-menu__article {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
