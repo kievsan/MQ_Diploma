@@ -383,7 +383,13 @@
 	margin-left: 1.67%;
 	order: 1;
 }
-
+/*
+@media (max-width: count(var(--width-tablet) - 1px)) {
+  .aside__page-content {
+	  width: 100%;
+  }
+}
+*/
 .latest-posts__aside {}
 
 .aside-header {
@@ -586,6 +592,7 @@ svg.search__icon {
 .category {
 	border-bottom: 1px solid var(--border-color-1);
 	padding-bottom: 15px;
+	list-style-type: none;
 }
 
 .category:nth-child(n + 2) {
