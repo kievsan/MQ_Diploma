@@ -6,6 +6,8 @@
 	--safe-width-1-desktop: 960px;
 	--safe-width-1-tablet: 768px;
 	--safe-width-1-mobile: 360px;
+	--safe-width-2: 690px;
+	--safe-width-3: 780px;
 	--special-color-1: #b59f5b; 
 	--special-color-2: #0f0d0e;
 	--special-color-3: #ebe7d7;
@@ -23,15 +25,12 @@
 
 .body {}
 
-.black {color: black;}
-
 .page-header {
 	/*width: 100%;*/
 	min-width: var(--width-desktop);
 	padding-top: 28px;
 	padding-bottom: 123px;
 	position: relative;
-	/*z-index: 5;*/
 	background-color: #2c4641;
 	background-image: url(../img/banner-bg.jpg);
 	background-repeat: no-repeat;
@@ -55,7 +54,7 @@
 
 .container__page-header {
 	width: 70%;
-	min-width: 690px;
+	min-width: var(--safe-width-2);
 	margin: 0 auto;
 	
 	display: flex;
@@ -70,20 +69,17 @@
 
 .main-logo {}
 
-.menu__page-header {
+.menu__page-header {}
+
+
+#list-menu__page-header {
 	font-family: "Open Sans Regular", sans-serif;
 	font-weight: lighter;
-}
+}	/*.flex-list-menu__tools */
 
-.menu-list {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-}
+.item__list-menu__page-header:nth-child(n + 2) {margin-left: 33px}
 
-.menu-list-one__page-header:nth-child(n + 2) {margin-left: 33px}
-
-.menu-link__page-header {
+.link__list-menu__page-header {
 	text-decoration: none;
 	font-family: inherit;
 	font-size: 13px;
@@ -93,7 +89,7 @@
 
 .title__page-header {
 	display: block;
-	width: 690px;
+	width: var(--safe-width-2);
 	margin: 105px auto 0;
 	text-align: center;
 	position: relative;
@@ -215,13 +211,7 @@
 				
 .menu__topic-article {margin-bottom: 13px}
 
-.categories-menu__article {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.category__categories-menu__article {}
+#categories-menu__article {} /* .flex-list-menu__tools */
 
 .category__categories-menu__article:nth-child(n + 2) {margin-left: 18px}
 
@@ -251,7 +241,7 @@
 
 				/*	---------- СПИСОК СТАТЕЙ 'MAIN' ----------	*/
 .post-list__page-content {
-	max-width: 780px;
+	max-width: var(--safe-width-3);
 	margin-right: 1.66%;
 	/*order: 0;*/
 }
@@ -454,15 +444,11 @@
 			
 .tags__aside {margin-top: var(--aside-space-between)}
 
-.tags-menu__aside {
-	display: flex;
-	flex-flow: row wrap;
+#tags-menu__aside {
 	justify-content: start;
 	align-items: stretch;
 	box-sizing: border-box;
-}
-
-.tag__tags-menu {list-style-type: none}
+} /* .flex-list-menu__tools */
 
 .tag__tags-menu:nth-child(n + 2) {margin-left: 5px;}
 .tag__tags-menu:nth-child(3n + 4) {margin-left: 0;} /* 4,7 */
@@ -493,10 +479,12 @@
 			
 .themes__aside {margin-top: var(--aside-space-between);}
 
-.categories-menu__aside {box-sizing: border-box}
+#categories-menu__aside {
+	list-style-type: none;
+	box-sizing: border-box
+}
 
 .category__categories-menu__aside {
-	list-style-type: none;
 	padding-bottom: 15px;
 	border-bottom: 1px solid var(--border-color-1);
 }
@@ -642,14 +630,11 @@
 
 
 			/*	---------- СОЦ.СЕТИ ----------	*/
-.social-top-menu__page-footer {
+#social-top-menu__page-footer {
 	padding: 30px 0;
-	display: flex;
 	justify-content: center;
 	background-color: #f4f7f6;
-}
-
-.social-icon__page-footer {list-style-type: none}
+} /* .flex-list-menu__tools */
 
 .social-icon__page-footer:nth-child(n + 2) {margin-left: 30px}
 
@@ -706,6 +691,15 @@
 
 			/*	---------- TOOLS ----------	*/
 
+.black {color: black}
+.white {color: white}
+
+.flex-list-menu__tools {
+	display: flex;
+	flex-flow: row wrap;
+	list-style: none;
+}
+
 .button__tools {
     border: none;
 	outline: none;
@@ -725,11 +719,6 @@
 .button__tools:focus {background-color: #323232}
 
 .button__tools:active {/*box-shadow: 0 0 0 3px var(--special-color-1);*/}
-
-.link__button__tools {color: white}
-
-.link__button__tools:hover, 
-.link__button__tools:focus {outline: none}
 
 .label-hidden__tools { /* скрытая метка */
     font-size: 0;
@@ -776,6 +765,7 @@
 
 
 			/*	---------- ШРИФТЫ ----------	*/
+			
 @font-face {
 	font-family: "Open Sans Bold";
 	src: url(../fonts/OpenSans-Bold.ttf) format("truetype"),
