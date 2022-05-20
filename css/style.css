@@ -30,18 +30,16 @@
 	min-width: var(--width-desktop);
 	padding-top: 28px;
 	padding-bottom: 123px;
+	position: relative;
+	/*z-index: 5;*/
 	background-color: #2c4641;
 	background-image: url(../img/banner-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: left top;
-	background-size: cover;
-  
+	background-size: cover;  
 	font-family: inherit;
 	color: #ffffff;
 	text-transform: uppercase;
-  
-	position: relative;
-	/*z-index: 5;*/
 }
 
 .page-header::after {
@@ -68,9 +66,7 @@
 	z-index: 5;
 }
 
-.logo__page-header {
-	width: 180px;
-}
+.logo__page-header {width: 180px}
 
 .main-logo {}
 
@@ -85,9 +81,7 @@
 	flex-wrap: wrap;
 }
 
-.menu-list-one__page-header:nth-child(n + 2) {
-	margin-left: 33px;
-}
+.menu-list-one__page-header:nth-child(n + 2) {margin-left: 33px}
 
 .menu-link__page-header {
 	text-decoration: none;
@@ -102,26 +96,24 @@
 	width: 690px;
 	margin: 105px auto 0;
 	text-align: center;
-  
+	position: relative;
+	z-index: 5;
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
 	font-size: 45px;
-	line-height: 75px;    
-  
-	position: relative;
-	z-index: 5; 
+	line-height: 75px;
 }
 
+
 				/*	---------- <page-trend-section> 'СЕЙЧАС В ТРЕНДЕ' ----------	*/
-.trend-section {
-	/*width: 100%;*/
-	min-width: var(--width-desktop);
-}
+				
+.trend-section {min-width: var(--width-desktop)}
 
 .page-section {
 	margin-left: auto;
 	margin-right: auto;
 }
+
 
 				/*	---------- 'СЕЙЧАС В ТРЕНДЕ' <HEADER> ----------	*/
 .header__page-section {
@@ -144,45 +136,38 @@
 
 .title__header__page-section {
 	display: block;
-	width: 690px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-  
+	position: relative;
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 29px;
-  
-	position: relative;
 }
+
 
 				/*	---------- 'СЕЙЧАС В ТРЕНДЕ' <TOPIC-ARTICLE> ----------	*/
 .topic__trend-section {
-	box-sizing: border-box;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	align-items: stretch;
-  
-	position: relative;	
+	align-items: stretch;  
+	position: relative;
+	box-sizing: border-box;
 }
 
 .topic-article {
 	width: 24.8%;
-	min-height: 321px;
-	
+	min-height: 321px;	
+	display: flex;
+	align-items: flex-end;
 	padding: 16px 20px;
-	
+	position: relative;
 	background-color: #2c4641;
 	background-repeat: no-repeat;
 	background-position: left top;
-	background-size: cover;	
-	
-	display: flex;
-	align-items: flex-end;
-	
-	position: relative;
+	background-size: cover;
 }
 
 .topic-article::after {
@@ -196,34 +181,21 @@
     left: 0;
 }
 
-.preview-1__topic-article {
-	background-image: url(../img/trend1.jpg);
-}
-
-.preview-2__topic-article {
-	background-image: url(../img/trend2.jpg);
-}
-
-.preview-3__topic-article {
-	background-image: url(../img/trend3.jpg);
-}
-
-.preview-4__topic-article {
-	background-image: url(../img/trend4.jpg);
-}
+.preview-1__topic-article {background-image: url(../img/trend1.jpg)}
+.preview-2__topic-article {background-image: url(../img/trend2.jpg)}
+.preview-3__topic-article {background-image: url(../img/trend3.jpg)}
+.preview-4__topic-article {background-image: url(../img/trend4.jpg)}
 
 .content__topic-article { 
 	display: block;
 	border: 3px solid var(--special-color-1); /*#b59f5b;*/
 	padding: 36px 32px;
-	
-	text-transform: uppercase;
-	font-family: "Open Sans Bold", sans-serif;
-	font-weight: bold;
-	
 	flex: auto;
 	position: relative;
 	z-index: 5;
+	font-family: "Open Sans Bold", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .header__topic-article {}
@@ -237,10 +209,11 @@
 .link__title__topic-article {
 	color: inherit;
 }
+
+
 				/*	---------- МЕНЮ КАТЕГОРИЙ СТАТЕЙ 'TOPIC-ARTICLE' ----------	*/
-.menu__topic-article {
-	margin-bottom: 13px;
-}
+				
+.menu__topic-article {margin-bottom: 13px}
 
 .categories-menu__article {
 	list-style: none;
@@ -248,19 +221,16 @@
 	flex-wrap: wrap;
 }
 
-.one__categories-menu {}
+.category__categories-menu__article {}
 
-.one__categories-menu:nth-child(n + 2) {
-	margin-left: 18px;
-}
+.category__categories-menu__article:nth-child(n + 2) {margin-left: 18px}
 
-.link__categories-menu {
+.link__categories-menu__article {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
 	font-size: 14px;
-	/*line-height: 40px;*/
 	font-style: normal;
 	color: var(--special-color-1); /*#b59f5b;*/
 }
@@ -282,10 +252,8 @@
 				/*	---------- СПИСОК СТАТЕЙ 'MAIN' ----------	*/
 .post-list__page-content {
 	max-width: 780px;
-	/*padding-top: count(64px - 13px);*/
-	/*padding-top: 51px;*/
 	margin-right: 1.66%;
-	order: 0;
+	/*order: 0;*/
 }
 
 .menu__article {
@@ -299,14 +267,9 @@
 	align-items: stretch;
 }
 
-.article__post-list:nth-child(n + 2) {
-	margin-top: 60px;
-	
-}
+.article__post-list:nth-child(n + 2) {margin-top: 60px}
 
-.preview__article__post-list {
-	flex: none;
-}
+.preview__article__post-list {flex: none}
 
 .img__article__post-list {
 	display: block;
@@ -333,23 +296,20 @@
 	color: var(--special-color-2);
 }
 
-.link__title__article__post-list {
-	color: inherit;
-}
+.link__title__article__post-list {color: inherit}
 
 .date-and-author {
-	margin-top: 20px;
+	margin-top: 30px;
+	margin-bottom: 40px;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-start;
-	/*min-height: 67px;*/
 }
 
 .post-date {
 	flex: none;
 	font-family: "Open Sans Regular", sans-serif;
 	font-size: 12px;
-	/*line-height: 40px;*/
 	font-weight: 400;
 	color: #888888;
 }
@@ -357,7 +317,6 @@
 .post-author {
 	font-family: "Open Sans Bold", sans-serif;
 	font-size: 12px;
-	/*line-height: 40px;*/
 	font-weight: bold;
 	color: #000000;
 	flex-grow: 1;
@@ -372,16 +331,15 @@
 	color: var(--special-color-2);
 }
 
-.p-margin-top {
-	margin-top: 22px;
-}
+.p-margin-top {margin-top: 22px}
+
 
 			/*	---------- 'ASIDE' ----------	*/
 .aside__page-content {
 	max-width: 271px;
 	min-width: 271px;
 	margin-left: 1.67%;
-	order: 1;
+	/*order: 1;*/
 }
 /*
 @media (max-width: count(var(--width-tablet) - 1px)) {
@@ -412,13 +370,11 @@
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-  
+	position: relative;
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 29px;
-  
-	position: relative;
 }
 
 .latest-post-list {}
@@ -427,34 +383,22 @@
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: stretch;
-	/*margin-bottom: 22px;*/
 }
 
-.latest-post:nth-child(n + 2) {
-	margin-top: 22px;
-	
-}
+.latest-post:nth-child(n + 2) {margin-top: 22px}
 
-.preview__latest-post {
-	flex: none;
-}
+.preview__latest-post {flex: none}
 
 .img__latest-post {
 	display: block;
 	max-width: 100%;
 }
 
-.content__latest-post {
-	margin-left: 20px;
-}
+.content__latest-post {margin-left: 20px}
 
-.date__latest-post {
-	margin-top: -2.5px;
-}
+.date__latest-post {margin-top: -2.5px}
 
-.header__latest-post {
-	margin-top: 3px;
-}
+.header__latest-post {margin-top: 3px}
 
 .title__latest-post {
 	font-family: "Open Sans Bold", sans-serif;
@@ -469,6 +413,7 @@
 	color: inherit;
 }
 
+
 			/*	---------- 'ASIDE' ПОИСК ----------	*/
 .search-form__aside {
 	margin-top: 60px;
@@ -476,59 +421,40 @@
 	align-items: stretch;
 }
 
-#search-field {
-	flex-grow: 1;
-}
+#search-field {flex-grow: 1}
 
 #search-button {
 	width: 48px;
 	height: 48px;
-}
-/*
-svg.search__icon {
-	width: 18px;
-	height: 18px;
-	fill: white;
-}
-*/
-.search__icon {
-	width: 18px;
-	height: 18px;
-	margin-left: auto;
-	margin-right: auto;
+	/* 5. Зачем нужен блок .search-icon? Почему не задать иконку фоном для кнопки? */
 	background-image: url(../svg/search.svg);
-	z-index: 5;
+	background-size: 18px;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 
 			/*	---------- 'SUBSCRIBE-ASIDE' ПОДПИСКА ----------	*/
-.subscribe__aside {
-	margin-top: var(--aside-space-between);
-}
+			
+.subscribe__aside {margin-top: var(--aside-space-between)}
 
 .subscribe-form {
 	display: flex;
 	flex-direction: column;
 }
 
-.subscribe-form-field:nth-child(n + 2) {
-	margin-top: 18px;
-}
+.subscribe-form-field:nth-child(n + 2) {margin-top: 18px}
 
-#email-field {
-}
+#email-field {}
 
-#subscribe-button {
-	padding: 14.5px 0;
-}
+#subscribe-button {padding: 14.5px 0}
 
 
 			/*	---------- 'TAGS-ASIDE' ТЕГИ ----------	*/
-.tags__aside {
-	margin-top: var(--aside-space-between);
-}
+			
+.tags__aside {margin-top: var(--aside-space-between)}
 
-.tags-list__aside {
+.tags-menu__aside {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: start;
@@ -536,15 +462,19 @@ svg.search__icon {
 	box-sizing: border-box;
 }
 
-.tag-button {
+.tag__tags-menu {list-style-type: none}
+
+.tag__tags-menu:nth-child(n + 2) {margin-left: 5px;}
+.tag__tags-menu:nth-child(3n + 4) {margin-left: 0;} /* 4,7 */
+.tag__tags-menu:nth-child(n + 4) {margin-top: 6px;} /* 2-й ряд и ниже */
+
+.button__tags-menu {
 	display: block;
-	box-sizing: border-box;
 	padding: 5px 13px;
 	border: 3px solid var(--border-color-1);
-    cursor: pointer;
 }
 
-.one-tag__aside {
+.link__tags-menu {
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
 	font-size: 12px;
@@ -552,79 +482,53 @@ svg.search__icon {
 	text-transform: uppercase;
 }
 
-.one-tag__aside:hover, 
-.one-tag__aside:focus {
-	border: 3px solid var(--special-color-1);
+.button__tags-menu:hover,
+.button__tags-menu:focus {
 	outline: none;
-}
-
-.one-tag__aside:nth-child(n + 2) {
-	margin-left: 5px;
-}
-
-.one-tag__aside:nth-child(n + 4) {
-	margin-top: 6px;
-}
-
-.one-tag__aside:nth-child(3n + 4) { /* 4,7 */
-	margin-left: 0;
-}
-
-.one-tag__aside:nth-child(5) { /* 4,7 */
-	margin-top: 6px;
+	border: 3px solid var(--special-color-1);
 }
 
 
 			/*	---------- 'CATEGORIES' ТЕМЫ ----------	*/
-.themes__aside {
-	margin-top: var(--aside-space-between);
-}
+			
+.themes__aside {margin-top: var(--aside-space-between);}
 
-.categories__aside {
-	box-sizing: border-box;
-}
+.categories-menu__aside {box-sizing: border-box}
 
-.categories-menu__aside {
-	display: flex;
-	flex-direction: column;
-}
-
-.category {
-	border-bottom: 1px solid var(--border-color-1);
-	padding-bottom: 15px;
+.category__categories-menu__aside {
 	list-style-type: none;
+	padding-bottom: 15px;
+	border-bottom: 1px solid var(--border-color-1);
 }
 
-.category:nth-child(n + 2) {
-	padding-top: 15px;
-}
+.category__categories-menu__aside:nth-child(n + 2) {padding-top: 15px}
 
-.menu-link__category {
+.link__categories-menu__aside {
+	position: relative;
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: bold;
-	position: relative;
-}
-
-.name__category {
-	text-transform: capitalize;
 	font-size: 14px;
+	text-transform: capitalize;
 	color: black;
 }
 
-/*:focus:not(:focus-visible) { outline: none; }*/
-
-.name__category:hover, 
-.name__category:focus  {
-	color: var(--special-color-1);
+.link__categories-menu__aside:focus,
+.link__categories-menu__aside:hover {
 	outline: none;
-}
-
-.posts-number__category {
-	font-size: 12px;
 	color: var(--special-color-1);
+}
+/* 
+.link__categories-menu:focus .name__link дочерний элемент 
+.link__categories-menu:focus + .link2__categories-menu следующий элемент
+.link__categories-menu:focus ~ .link3__categories-menu братский элемент
+*/
+
+.posts-number__link {
 	position: absolute;
 	margin-left: 5px;
 	top: 0;
+	font-size: 12px;
+	color: var(--special-color-1);
 }
 
 
@@ -645,12 +549,9 @@ svg.search__icon {
 			/*	---------- 'МАГАЗИН' товары <PRODUCT> ----------	*/
 .product {
 	width: 30%;
-	background-color: white;
-	box-sizing: border-box;
-	/*border: 3px solid #d3c59d;*/
-	
 	display: flex;
 	flex-direction: column;
+	box-sizing: border-box;
 }
 
 .product:nth-child(3n + 2) {
@@ -664,8 +565,8 @@ svg.search__icon {
   }
 
 .product-img {
-	display: block;
 	width: 100%;
+	display: block;
 }
 
 .product-body {
@@ -677,9 +578,7 @@ svg.search__icon {
 	flex-grow: 1;
 }
 
-.product-content {
-	color: var(--special-color-2);
-}
+.product-content {color: var(--special-color-2)}
 
 .product-title {
 	font-family: "Open Sans Bold", sans-serif;
@@ -690,9 +589,7 @@ svg.search__icon {
 	margin-bottom: 7px;
 }
 
-.link__product-title {
-	color: inherit;
-}
+.link__product-title {color: inherit}
 
 .product-description {	
 	font-family: "Open Sans Regular", sans-serif;
@@ -701,13 +598,10 @@ svg.search__icon {
 	line-height: 22px;
 }
 
-.p__product-description {
-	margin-top: 1px;
-}
+.p__product-description {margin-top: 1px}
 
-.link__product-description {
-	color: var(--special-color-1);
-}		
+.link__product-description {color: var(--special-color-1);}		
+
 
 			/*	---------- 'PRODUCT-FOOTER' ЦЕНА продукта ----------	*/
 .product-footer {
@@ -723,21 +617,16 @@ svg.search__icon {
 	color: var(--special-color-2);
 }
 
-.product-price {
-	font-size: 20px;
-}
+.product-price {font-size: 20px}
 
-.value__product-price {
-}
+.value__product-price {}
 
 .old__product-price {
 	text-decoration: line-through;
 	font-size: 14px;
 }
 
-.rub {
-	margin-left: 4px;
-}
+.rub {margin-left: 4px}
 
 .product-button {
 	display: block;
@@ -751,26 +640,26 @@ svg.search__icon {
 	margin-top: 65px;
 }
 
+
 			/*	---------- СОЦ.СЕТИ ----------	*/
-.social-top {
+.social-top-menu__page-footer {
 	padding: 30px 0;
 	display: flex;
 	justify-content: center;
 	background-color: #f4f7f6;
 }
 
+.social-icon__page-footer {list-style-type: none}
+
+.social-icon__page-footer:nth-child(n + 2) {margin-left: 30px}
+
 .social-icon {
 	width: 20px;
 	height: 20px;
-	/*fill: black;*/
 	display: block;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-}
-
-.social-icon:nth-child(n + 2) {
-	margin-left: 30px;
 }
 
 #social-icon-twitter {
@@ -799,28 +688,6 @@ svg.search__icon {
 	background-image: url(../svg/logo-5-tumblr.svg);
 }
 
-/*
-svg.social-icon-twitter {
-	width: 25px;
-	height: 21px;
-}
-
-svg.social-icon-pinterest {
-	width: 16px;
-}
-
-svg.social-icon-facebook {
-	width: 12px;
-}
-
-svg.social-icon-instagram {
-}
-
-svg.social-icon-tumblr {
-	width: 13px;
-}
-*/
-
 
 			/*	---------- copyright ----------	*/
 .footer-bottom {
@@ -829,10 +696,10 @@ svg.social-icon-tumblr {
 }
 
 .copyright {
+	padding-bottom: 40px;
 	font-family: "Open Sans Bold", sans-serif;
 	font-weight: normal;
 	font-size: 12px;
-	line-height: 40px;
 	color: #999999;
 }
 
@@ -855,22 +722,14 @@ svg.social-icon-tumblr {
 }
 
 .button__tools:hover, 
-.button__tools:focus {
-	background-color: #323232;
-}
+.button__tools:focus {background-color: #323232}
 
-.button__tools:active {
-  /*box-shadow: 0 0 0 3px var(--special-color-1);*/
-}
+.button__tools:active {/*box-shadow: 0 0 0 3px var(--special-color-1);*/}
 
-.link__button__tools {
-	color: white;
-}
+.link__button__tools {color: white}
 
 .link__button__tools:hover, 
-.link__button__tools:focus {
-	outline: none;
-}
+.link__button__tools:focus {outline: none}
 
 .label-hidden__tools { /* скрытая метка */
     font-size: 0;
@@ -883,6 +742,16 @@ svg.social-icon-tumblr {
     left: 0;*/
 }
 
+.visually-hidden__tools {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} 
 
 .input-text-field__tools {
 	outline: none;	
@@ -898,9 +767,7 @@ svg.social-icon-tumblr {
 
 .input-text-field__tools:hover, 
 .input-text-field__tools:focus, 
-.input-text-field__tools:active {
-    border-bottom: 1px solid var(--special-color-3);
-}
+.input-text-field__tools:active {border-bottom: 1px solid var(--special-color-3)}
 
 /*#search-field::-webkit-input-placeholder {color: auto;}*/
 /*input::-webkit-input-placeholder {color: blue;}*/
