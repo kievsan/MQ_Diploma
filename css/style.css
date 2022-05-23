@@ -74,7 +74,7 @@
 .menu__page-header {}
 
 
-#list-menu__page-header {
+.list-menu__page-header {
 	font-family: "Open Sans Regular", sans-serif;
 	font-weight: lighter;
 }	/*.flex-list-menu__tools */
@@ -143,13 +143,10 @@
 
 				/*	---------- 'СЕЙЧАС В ТРЕНДЕ' <TOPIC-ARTICLE> ----------	*/
 .topic__trend-section {
-	display: flex;
-	flex-flow: row nowrap;
 	justify-content: space-between;
-	align-items: stretch;  
 	position: relative;
 	box-sizing: border-box;
-}
+}	/* .flex-row-nowrap-stretch__tools */
 
 .topic-article {
 	width: 24.8%;
@@ -200,16 +197,14 @@
 	color: #ffffff;
 }
 
-.link__title__topic-article {
-	color: inherit;
-}
+.link__title__topic-article {color: inherit;}
 
 
 				/*	---------- МЕНЮ КАТЕГОРИЙ СТАТЕЙ 'TOPIC-ARTICLE' ----------	*/
 				
 .menu__topic-article {margin-bottom: 13px}
 
-#categories-menu__article {} /* .flex-list-menu__tools */
+.categories-menu__article {} /* .flex-list-menu__tools */
 
 .category__categories-menu__article:nth-child(n + 2) {margin-left: 18px}
 
@@ -237,12 +232,7 @@
 	margin-right: auto;
 }
 
-.page-content {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	align-items: stretch;
-}
+.page-content {justify-content: space-between;}	/* .flex-row-nowrap-stretch__tools */
 
 				/*	---------- СПИСОК СТАТЕЙ 'MAIN' ----------	*/
 .post-list__page-content {
@@ -256,11 +246,7 @@
 	margin-bottom: 13px;
 }
 
-.article__post-list {
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: stretch;
-}
+.article__post-list {}	/* .flex-row-nowrap-stretch__tools */
 
 .article__post-list:nth-child(n + 2) {margin-top: 60px}
 
@@ -269,7 +255,6 @@
 .img__article__post-list {
 	display: block;
 	max-width: 100%;
-	/*margin-top: 13px;*/
 }
 
 .content__article__post-list {
@@ -374,11 +359,7 @@
 
 .latest-post-list {}
 
-.latest-post {
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: stretch;
-}
+.latest-post {}	/* .flex-row-nowrap-stretch__tools */
 
 .latest-post:nth-child(n + 2) {margin-top: 22px}
 
@@ -410,17 +391,12 @@
 
 
 			/*	---------- 'ASIDE' ПОИСК ----------	*/
-.search-form__aside {
-	margin-top: 60px;
-	display: flex;
-	align-items: stretch;
-}
+.search-form__aside {margin-top: 60px;}	/* .flex-row-nowrap-stretch__tools */
 
-#search-field {flex-grow: 1}
+.search-field {flex-grow: 1}
 
-#search-button {
+.search-button {
 	width: 48px;
-	height: 48px;
 	/* 5. Зачем нужен блок .search-icon? Почему не задать иконку фоном для кнопки? */
 	background-image: url(../svg/search.svg);
 	background-size: 18px;
@@ -440,16 +416,16 @@
 
 .subscribe-form-field:nth-child(n + 2) {margin-top: 18px}
 
-#email-field {}
+.email-field {}
 
-#subscribe-button {padding: 14.5px 0}
+.subscribe-button {padding: 14.5px 0}
 
 
 			/*	---------- 'TAGS-ASIDE' ТЕГИ ----------	*/
 			
 .tags__aside {margin-top: var(--aside-space-between)}
 
-#tags-menu__aside {
+.tags-menu__aside {
 	justify-content: start;
 	align-items: stretch;
 	box-sizing: border-box;
@@ -532,12 +508,9 @@
 }
 
 .goods__shop-content {
-	display: flex;
-	flex-flow: row wrap;
 	justify-content: space-between;
-	align-items: stretch;
 	box-sizing: border-box;
-}
+}	/* .flex-row-nowrap-stretch__tools */
 
 			/*	---------- 'МАГАЗИН' товары <PRODUCT> ----------	*/
 .product {
@@ -634,7 +607,7 @@
 	margin-top: 65px;
 }
 
-#social-top-menu {
+.social-top-menu {
 	padding: 30px 0;
 	justify-content: center;
 	background-color: #f4f7f6;
@@ -651,28 +624,28 @@
 	background-size: cover;
 }
 
-#social-icon-twitter {
+.social-icon-twitter {
 	width: 25px;
 	height: 21px;
 	background-image: url(../svg/logo-1-twitter.svg);
 }
 
-#social-icon-pinterest {
+.social-icon-pinterest {
 	width: 16px;
 	background-image: url(../svg/logo-2-pinterest.svg);
 }
 
-#social-icon-facebook {
+.social-icon-facebook {
 	width: 12px;
 	background-image: url(../svg/logo-3-facebook.svg);
 }
 
-#social-icon-instagram {
+.social-icon-instagram {
 	width: 20px;
 	background-image: url(../svg/logo-4-instagram.svg);
 }
 
-#social-icon-tumblr {
+.social-icon-tumblr {
 	width: 13px;
 	background-image: url(../svg/logo-5-tumblr.svg);
 }
@@ -715,7 +688,6 @@
 
 .feedback-pupup-window {
 	position: fixed;
-	/*top: 210px;*/
 	width: 390px;
 	box-sizing: border-box;
 	z-index: 2022;
@@ -766,7 +738,7 @@
 	color: #6b6b6b;
 }
 
-#select-frequency {
+.select-frequency {
 	width: 100%;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -810,14 +782,14 @@
 	width: 1px; 
 }
 
-#message-textarea {
+.form-group > .message-textarea {
 	width: 100%;
 	height: 130px;
 	padding-top: 18px;
 }
+.message-textarea::placeholder {}
 
-
-#feedback-form-button {
+.feedback-form-button {
 	width: 100%;
 	text-align: center;
 	vertical-align: middle;
@@ -833,6 +805,12 @@
 	display: flex;
 	flex-flow: row wrap;
 	list-style: none;
+}
+
+.flex-row-nowrap-stretch__tools {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: stretch;
 }
 
 .button__tools,
@@ -854,6 +832,7 @@
 	font-weight: bold;
 	font-size: 14px;
 	/*line-height: 40px;*/
+	line-height: normal;
 }
 
 .input-text-field__tools {
