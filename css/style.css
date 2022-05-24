@@ -71,8 +71,17 @@
 
 .main-logo {}
 
-.menu__page-header {}
+@media (max-width: 1199px) {
+	.menu__page-header {display: none;}
+	.button-nav-menu__page-header {display: block;}
+}
 
+@media (min-width: 1200px) {
+	.menu__page-header {display: block;}
+	.button-nav-menu__page-header {display: none;}
+}
+
+.menu__page-header {}
 
 .list-menu__page-header {
 	font-family: "Open Sans Regular", sans-serif;
@@ -88,6 +97,18 @@
 	font-style: normal;
 	color: inherit;
 }
+
+.button-nav-menu__page-header {
+	width: 23px;
+	height: 20px;
+	background-size: cover;
+	background-image: url(../svg/button_main_menu.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.button-nav-menu__page-header:active ~.menu__page-header {display: block;}
 
 .title__page-header {
 	display: block;
@@ -487,7 +508,7 @@
 	color: var(--special-color-1);
 }
 /* 
-.link__categories-menu:focus .name__link дочерний селектор
+.link__categories-menu:focus > .name__link дочерний селектор
 .link__categories-menu:focus + .link2__categories-menu следующий/соседний селектор
 .link__categories-menu:focus ~ .link3__categories-menu родственный селектор
 */
@@ -785,7 +806,7 @@
 .form-group > .message-textarea {
 	width: 100%;
 	height: 130px;
-	padding-top: 18px;
+	padding: 18px;
 }
 .message-textarea::placeholder {}
 
@@ -879,7 +900,7 @@
 	 clip: rect(1px, 1px, 1px, 1px);
 }
 
-._hidden {/*display: none;*/}
+._hidden {display: none;}
 
 /*#search-field::-webkit-input-placeholder {color: auto;}*/
 /*input::-webkit-input-placeholder {color: blue;}*/
