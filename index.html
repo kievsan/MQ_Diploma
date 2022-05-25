@@ -10,10 +10,10 @@
 
 <header class="page-header">
     <div class="container__page-header">
-		<a class="logo__page-header" href="index.html">
-			<img src="svg/noemi-logo.svg" class="main-logo" alt="Логотип">
-		</a>
-		<nav class="menu__page-header">
+		<div class='button-nav-menu__page-header' title='Навигация по сайту'>
+			<a tabindex="2" class='text-hidden__tools' href="#0">Кнопка "Меню"</a>
+		</div>
+		<nav id='main-menu' class="menu__page-header">
 			<ul class='list-menu__page-header flex-list-menu__tools'>
 				<li class='item__list-menu__page-header'>
 					<a class='link__list-menu__page-header' href="#0">Главная</a></li>
@@ -29,9 +29,9 @@
 					<a class='link__list-menu__page-header' href="#0">Контакты</a></li>
 			</ul>
 		</nav>
-		<div class='button-nav-menu__page-header' title='Навигация по сайту'>
-			<span class='text-hidden__tools'>Кнопка "Меню"</span>
-		</div>
+		<a tabindex="1" class="logo__page-header" href="index.html">
+			<img src="svg/noemi-logo.svg" class="main-logo" alt="Логотип">
+		</a>
     </div>
     <h1 class="title__page-header">Блог о творчестве, спорте, и образе жизни</h1>    
 </header>

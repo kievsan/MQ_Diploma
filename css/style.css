@@ -60,11 +60,11 @@
 	margin: 0 auto;
 	
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: row-reverse wrap;
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	z-index: 5;
+	z-index: 2020;
 }
 
 .logo__page-header {width: 180px}
@@ -73,7 +73,9 @@
 
 @media (max-width: 1199px) {
 	.menu__page-header {display: none;}
-	.button-nav-menu__page-header {display: block;}
+	.button-nav-menu__page-header,
+	.button-nav-menu__page-header:focus + .menu__page-header, 
+	:hover + .menu__page-header, :active + .menu__page-header {display: block;}
 }
 
 @media (min-width: 1200px) {
@@ -107,8 +109,6 @@
 	background-repeat: no-repeat;
 	cursor: pointer;
 }
-
-.button-nav-menu__page-header:active ~.menu__page-header {display: block;}
 
 .title__page-header {
 	display: block;
