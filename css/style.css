@@ -115,6 +115,7 @@
 	.page-header {
 		padding-top: 32px;
 		padding-bottom: 220px;
+		background-position: 33% ;
 	}
 	
 	.logo__page-header {display: none;}
