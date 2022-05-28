@@ -9,16 +9,19 @@
 <body>
 
 <header class="page-header">
-    <div class="container__page-header flex-row-reverse-wrap__tools">
-		<div class='button-nav-menu__page-header' title='Навигация по сайту'>
-			<span tabindex="2" class='text-hidden__tools'>Кнопка "Меню"</span>
-		</div>
-		<nav id='main-menu' class="menu__page-header">
-			<ul class='list-menu__page-header flex-list-menu__tools'>
+    <div class="container__page-header">
+		<a class="logo__page-header" href="index.html">
+			<img src="svg/noemi-logo.svg" class="main-logo" alt="Логотип">
+		</a>
+		<nav class="menu__page-header">
+			<div class='button-nav-menu__page-header' title='Навигация по сайту'>
+				<span class='text-hidden__tools'>Кнопка "Меню"</span>
+			</div>
+			<ul class='list-menu__page-header'>
 				<li class='item__list-menu__page-header'>
 					<a class='link__list-menu__page-header' href="#0">Главная</a></li>
 				<li class='item__list-menu__page-header'>
-					<a class='link__list-menu__page-header'" href="#0">Посты</a></li>
+					<a class='link__list-menu__page-header' href="#0">Посты</a></li>
 				<li class='item__list-menu__page-header'>
 					<a class='link__list-menu__page-header' href="#0">Статьи</a></li>
 				<li class='item__list-menu__page-header'>
@@ -29,10 +32,10 @@
 					<a class='link__list-menu__page-header' href="#0">Контакты</a></li>
 			</ul>
 		</nav>
-		<a tabindex="1" class="logo__page-header" href="index.html">
-			<img src="svg/noemi-logo.svg" class="main-logo" alt="Логотип">
-		</a>
     </div>
+	<a class="logo-for-mobile__page-header" href="index.html">
+		<img src="svg/noemi-logo.svg" class="main-logo" alt="Логотип">
+	</a>
     <h1 class="title__page-header">Блог о творчестве, спорте, и образе жизни</h1>    
 </header>
 
@@ -90,11 +93,11 @@
 		<h2 class="title__header__page-section">Сейчас в тренде</h2>
 	</header>
 	
-	<div class='topic__trend-section flex-row-nowrap-stretch__tools'>
+	<div class='topic__trend-section'>
 		<article class='topic-article preview-1__topic-article'>
 			<div class='content__topic-article'>
 				<nav class='menu__topic-article'>
-					<ul class='categories-menu__article flex-list-menu__tools'>
+					<ul class='categories-menu__article flex-list-nostyle__tools'>
 						<li class='category__categories-menu__article'>
 							<a class='link__categories-menu__article' href="#0">Lifestyle</a>
 						</li>
@@ -113,7 +116,7 @@
 		<article class='topic-article preview-2__topic-article'>
 			<div class='content__topic-article'>
 				<nav class='menu__topic-article'>
-					<ul class='categories-menu__article flex-list-menu__tools'>
+					<ul class='categories-menu__article flex-list-nostyle__tools'>
 						<li class='category__categories-menu__article'>
 							<a class='link__categories-menu__article' href="#0">Food</a>
 						</li>
@@ -129,7 +132,7 @@
 		<article class='topic-article preview-3__topic-article'>
 			<div class='content__topic-article'>
 				<nav class='menu__topic-article'>
-					<ul class='categories-menu__article flex-list-menu__tools'>
+					<ul class='categories-menu__article flex-list-nostyle__tools'>
 						<li class='category__categories-menu__article'>
 							<a class='link__categories-menu__article' href="#0">Lifestyle</a>
 						</li>
@@ -148,7 +151,7 @@
 		<article class='topic-article preview-4__topic-article'>
 			<div class='content__topic-article'>
 				<nav class='menu__topic-article'>
-					<ul class='categories-menu__article flex-list-menu__tools'>
+					<ul class='categories-menu__article flex-list-nostyle__tools'>
 						<li class='category__categories-menu__article'>
 							<a class='link__categories-menu__article' href="#0">Food</a>
 						</li>
@@ -168,12 +171,12 @@
 </section>
 
 
-<div class='page-wrapper page-section'>
+<div class='page-content-wrapper'>
 
-<div class='page-content flex-row-nowrap-stretch__tools'>
-	<main class='post-list__page-content'>
+<div class='page-content'>
+	<main class='post-list__page-content flex-properties__page-content'>
 			<!-- 			-->
-		<article class='article__post-list flex-row-nowrap-stretch__tools'>
+		<article class='article__post-list'>
 			<picture class='preview__article__post-list'>
 				<img class='img__article__post-list' 
 					src='img/post-1_list.jpg' 
@@ -181,7 +184,7 @@
 			</picture>
 			<div class='content__article__post-list'>
 				<nav class='menu__article'>
-					<ul class='categories-menu__article flex-list-menu__tools'>
+					<ul class='categories-menu__article flex-list-nostyle__tools'>
 						<li class='category__categories-menu__article'>
 							<a class='link__categories-menu__article' href="#0">Travel</a>
 						</li>
@@ -205,7 +208,7 @@
 				</div>
 			</div>
 		</article>
-		<article class='article__post-list flex-row-nowrap-stretch__tools'>
+		<article class='article__post-list'>
 			<picture class='preview__article__post-list'>
 				<img class='img__article__post-list' 
 					src='img/post-2_list.jpg' 
@@ -213,7 +216,7 @@
 			</picture>
 			<div class='content__article__post-list'>
 				<nav class='menu__article'>
-					<ul class='categories-menu__article flex-list-menu__tools'>
+					<ul class='categories-menu__article flex-list-nostyle__tools'>
 						<li class='category__categories-menu__article'>
 							<a class='link__categories-menu__article' href="#0">Health</a>
 						</li>
@@ -237,7 +240,7 @@
 				</div>
 			</div>
 		</article>
-		<article class='article__post-list flex-row-nowrap-stretch__tools'>
+		<article class='article__post-list'>
 			<picture class='preview__article__post-list'>
 				<img class='img__article__post-list' 
 					src='img/post-3_list.jpg' 
@@ -245,7 +248,7 @@
 			</picture>
 			<div class='content__article__post-list'>
 				<nav class='menu__article'>
-					<ul class='categories-menu__article flex-list-menu__tools'>
+					<ul class='categories-menu__article flex-list-nostyle__tools'>
 						<li class='category__categories-menu__article'>
 							<a class='link__categories-menu__article' href="#0">Music</a>
 						</li>
@@ -267,7 +270,7 @@
 				</div>
 			</div>
 		</article>
-		<article class='article__post-list flex-row-nowrap-stretch__tools'>
+		<article class='article__post-list'>
 			<picture class='preview__article__post-list'>
 				<img class='img__article__post-list' 
 					src='img/post-4_list.jpg' 
@@ -275,7 +278,7 @@
 			</picture>
 			<div class='content__article__post-list'>
 				<nav class='menu__article'>
-					<ul class='categories-menu__article flex-list-menu__tools'>
+					<ul class='categories-menu__article flex-list-nostyle__tools'>
 						<li class='category__categories-menu__article'>
 							<a class='link__categories-menu__article' href="#0">Lifestyle</a>
 						</li>
@@ -299,7 +302,7 @@
 				</div>
 			</div>
 		</article>
-		<article class='article__post-list flex-row-nowrap-stretch__tools'>
+		<article class='article__post-list'>
 			<picture class='preview__article__post-list'>
 				<img class='img__article__post-list' 
 					src='img/post-5_list.jpg' 
@@ -307,7 +310,7 @@
 			</picture>
 			<div class='content__article__post-list'>
 				<nav class='menu__article'>
-					<ul class='categories-menu__article flex-list-menu__tools'>
+					<ul class='categories-menu__article flex-list-nostyle__tools'>
 						<li class='category__categories-menu__article'>
 							<a class='link__categories-menu__article' href="#0">Lifestyle</a>
 						</li>
@@ -338,13 +341,13 @@
 	</main>
 	
 	
-	<aside class='aside__page-content'>
+	<aside class='aside__page-content flex-properties__page-content'>
 		<section class='latest-posts__aside'>
 			<header class='aside-header'>
 				<h2 class='title__aside-header'>Новые посты</h2>
 			</header>
 			<div class='latest-post-list'>				
-				<article class='latest-post flex-row-nowrap-stretch__tools'>
+				<article class='latest-post'>
 					<picture class='preview__latest-post'>
 						<img class='img__latest-post' 
 							src='img/post-1_latest.jpg' 
@@ -359,7 +362,7 @@
 						</header>
 					</div>
 				</article>
-				<article class='latest-post flex-row-nowrap-stretch__tools'>
+				<article class='latest-post'>
 					<picture class='preview__latest-post'>
 						<img class='img__latest-post' 
 							src='img/post-2_latest.jpg' 
@@ -374,7 +377,7 @@
 						</header>
 					</div>
 				</article>			
-				<article class='latest-post flex-row-nowrap-stretch__tools'>
+				<article class='latest-post'>
 					<picture class='preview__latest-post'>
 						<img class='img__latest-post' 
 							src='img/post-3_latest.jpg' 
@@ -390,7 +393,7 @@
 						</header>
 					</div>
 				</article>			
-				<article class='latest-post flex-row-nowrap-stretch__tools'>
+				<article class='latest-post'>
 					<picture class='preview__latest-post'>
 						<img class='img__latest-post' 
 							src='img/post-4_latest.jpg' 
@@ -405,7 +408,7 @@
 						</header>
 					</div>
 				</article>		
-				<article class='latest-post flex-row-nowrap-stretch__tools'>
+				<article class='latest-post'>
 					<picture class='preview__latest-post'>
 						<img class='img__latest-post' 
 							src='img/post-5_latest.jpg' 
@@ -423,7 +426,7 @@
 				</article>				
 			</div>
 			
-			<form class='search-form__aside flex-row-nowrap-stretch__tools'>
+			<form class='search-form__aside'>
 				<input class='search-field input-text-field__tools' type='search'						
 						placeholder='Найти пост...' name='query' required>
 					<label for='search-field' class='visually-hidden__tools'>Поле ввода поиска поста</label>
@@ -453,7 +456,7 @@
 				<h2 class='title__aside-header'>Теги</h2>
 			</header>
 			<nav class='tags-menu'>
-				<ul class='tags-menu__aside flex-list-menu__tools'>
+				<ul class='tags-menu__aside flex-list-nostyle__tools'>
 					<li class='tag__tags-menu'> <a class='button__tags-menu link__tags-menu' href="#0">Fashion</a></li>
 					<li class='tag__tags-menu'> <a class='button__tags-menu link__tags-menu'' href="#0">Music</a></li>
 					<li class='tag__tags-menu'> <a class='button__tags-menu link__tags-menu'' href="#0">Lifestile</a></li>
@@ -471,19 +474,19 @@
 				<h2 class='title__aside-header'>Темы</h2>
 			</header>
 			<nav class='themes-menu'>
-				<ul id="categories-menu__aside">
-					<li class="category__categories-menu__aside"> <a class="link__categories-menu__aside" href="#0">Красота
-						<span class='posts-number__link'>12</span></a></li>
-					<li class="category__categories-menu__aside"> <a class="link__categories-menu__aside" href="#0">Здоровье
-						<span class='posts-number__link'>4</span></a></li>
-					<li class="category__categories-menu__aside"> <a class="link__categories-menu__aside" href="#0">Образ жизни
-						<span class='posts-number__link'>145</span></a></li>
-					<li class="category__categories-menu__aside"> <a class="link__categories-menu__aside" href="#0">Музыка
-						<span class='posts-number__link'>28</span></a></li>
-					<li class="category__categories-menu__aside"> <a class="link__categories-menu__aside" href="#0">Спорт
-						<span class='posts-number__link'>62</span></a></li>
-					<li class="category__categories-menu__aside"> <a class="link__categories-menu__aside" href="#0">Йога
-						<span class='posts-number__link'>8</span></a></li>					
+				<ul class='categories-menu__aside'>
+					<li class="category__categories-menu__aside"> <a class="link__categories-menu__aside" href="#0">Красота</a>
+						<span class='posts-number__link'>12</span></li>
+					<li class="category__categories-menu__aside"> <a class="link__categories-menu__aside" href="#0">Здоровье</a>
+						<span class='posts-number__link'>4</span></li>
+					<li class="category__categories-menu__aside"> <a class="link__categories-menu__aside" href="#0">Образ жизни</a>
+						<span class='posts-number__link'>145</span></li>
+					<li class="category__categories-menu__aside"> <a class="link__categories-menu__aside" href="#0">Музыка</a>
+						<span class='posts-number__link'>28</span></li>
+					<li class="category__categories-menu__aside"> <a class="link__categories-menu__aside" href="#0">Спорт</a>
+						<span class='posts-number__link'>62</span></li>
+					<li class="category__categories-menu__aside"> <a class="link__categories-menu__aside" href="#0">Йога</a>
+						<span class='posts-number__link'>8</span></li>					
 				</ul>
 			</nav>
 		</section>		
@@ -495,7 +498,7 @@
 	<header class="header__page-section title-padding__page-section">
 		<h2 class="title__header__page-section">Наши изделия</h2>
 	</header>
-	<div class='goods__shop-content flex-row-nowrap-stretch__tools'>
+	<div class='goods__shop-content'>
 		<article class='product'>
 			<picture class='product-imgbox'>
 				<img class='product-img'
@@ -598,7 +601,7 @@
 
 
 <address class="social-addresses">
-	<ul class='social-top-menu flex-list-menu__tools'>
+	<ul class='social-top-menu flex-list-nostyle__tools'>
 		<li class="social-icon"> <a class='social-icon-twitter link-social-icon' href="#0">
 			<span class='visually-hidden__tools'>Иконка twitter</span></a></li>
 		<li class="social-icon"> <a class='social-icon-pinterest link-social-icon' href="#0">
@@ -621,5 +624,4 @@
 </div>		<!-- 	page-wrapper		-->
 
 </body>
-
 </html>
