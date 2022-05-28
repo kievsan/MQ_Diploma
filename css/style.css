@@ -107,6 +107,10 @@
 }
 
 @media (max-width: 1199px) { /* --max-width__tablet */
+	.page-header {
+		background-position: 55% ;
+	}
+	
 	.list-menu__page-header {display: none;}
 	.button-nav-menu__page-header {display: block;}
 }
