@@ -2,11 +2,12 @@
 :root {
 	--min-width__desktop: 1200px;
 	--max-width__tablet: 1199px;
-	--min-width__tablet: 768px;
-	--max-width__mobile: 767px;
+	--min-width__tablet: 641px;
+	--max-width__mobile: 640px;
 	--min-width__mobile: 360px;
 	--safe-width-1-desktop: 790px;
 	--safe-width-2: 690px;
+	--safe-width-3: 400px;
 	--special-color-1: #b59f5b; 
 	--special-color-2: #0f0d0e;
 	--special-color-3: #ebe7d7;
@@ -24,15 +25,14 @@
 	padding:0;
 	box-sizing: border-box;
 	text-decoration: none;
-	/*font-size: 45px;*/
+	font-size: 100%;
 }
 
 .body {}
 
 .page-header {
 	min-width: var(--min-width__mobile);
-	padding-top: 28px;
-	padding-bottom: 123px;
+	padding: 28px 0 123px;
 	position: relative;
 	background: url(../img/banner-bg.jpg) left top /cover no-repeat #2c4641;	
 	font-family: inherit;
@@ -97,7 +97,6 @@
 	margin: 105px auto 0;
 	text-align: center;
 	min-height: 108px;
-	/*vertical-align: center;*/
 	position: relative;
 	z-index: 5;
 	font-family: "Open Sans Bold", sans-serif;
@@ -106,20 +105,23 @@
 	line-height: 75px;
 }
 
-@media (max-width: 1199px) { /* --max-width__tablet */
-	.page-header {
-		background-position: 55% ;
+@media (max-width: 1199px) { /* mobile + tablet */
+	.page-header {		
+		padding: 40px 0 100px;
+		background-image: url(../img/banner-bg-tablet.jpg);
 	}
 	
+	.container__page-header {width: 91%;}
+	
 	.list-menu__page-header {display: none;}
+	
 	.button-nav-menu__page-header {display: block;}
 }
 
-@media (max-width: 767px) { /* --max-width__mobile */
+@media (max-width: 767px) { /* mobile */
 	.page-header {
-		padding-top: 32px;
-		padding-bottom: 220px;
-		background-position: 33% ;
+		padding: 32px 0 220px;
+		background-image: url(../img/banner-mobile.jpg);
 	}
 	
 	.logo__page-header {display: none;}
@@ -127,12 +129,13 @@
 	.container__page-header {
 		width: 100%;
 		justify-content: flex-end;
-		padding-right: 4.44%;
+		padding: 0 4.44%;
 	}
 
 	.logo-for-mobile__page-header {display: block;}
 
 	.title__page-header {
+		max-width: var(--safe-width-3);
 		margin: 40px auto 0;
 		font-size: 26px;
 		line-height: 36px;
@@ -142,7 +145,7 @@
 
 				/*	---------- <page-trend-section> 'СЕЙЧАС В ТРЕНДЕ' ----------	*/
 				
-.trend-section {min-width: var(--min-width_tablet);}	/* 768px */
+.trend-section {min-width: var(--min-width_tablet);}	/* 641px */
 
 
 				/*	---------- 'СЕЙЧАС В ТРЕНДЕ' <HEADER> ----------	*/
@@ -171,7 +174,7 @@
 	padding-bottom: 35px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 640px) {
 	.title__header__page-section {
 	font-size: 16px;
 	line-height: auto;
@@ -227,26 +230,39 @@
 
 .link__title__topic-article {color: inherit;}
 
+
 @media (max-width: 1199px) {
-	.topic-article {
-		width: 49.8%;
-		min-height: 248px;
-	}
-	
 	.topic-article:nth-child(n+3) {margin-top: 0.4%;}
 }
 
-@media (max-width: 767px) {
-	.topic-article {
-		width: 100%;
-		min-height: 230px;
-	}
-	
+@media (max-width: 640px) {
 	.topic-article:nth-child(n+1) {margin-top: 1.11%;}
 
 	.title__topic-article {
 		font-size: 16px;
 		line-height: 20px;
+	}
+}
+
+@media (max-height: 1199px) and (orientation: landscape) {
+	.topic-article {
+		width: 24.8%;
+		min-height: 321px;
+	}
+}
+
+@media (max-width: 1199px) and (orientation: portrait),
+	(max-height: 640px) and (orientation: landscape) {
+	.topic-article {
+		width: 49.8%;
+		min-height: 248px;
+	}
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+	.topic-article {
+		width: 100%;
+		min-height: 230px;
 	}
 }
 
@@ -287,56 +303,38 @@
 }
 
 @media (min-width: 1200px) {
-.flex-properties__page-content:nth-child(n + 2) {margin-left: 7.53%;}
+.adaptive-properties__page-content:nth-child(2) {margin-left: 7.53%;}
 }
 
 @media (max-width: 1199px) {
-	.flex-properties__page-content:nth-child(n + 2) {margin-left: 4.56%;}
+	.adaptive-properties__page-content:nth-child(2) {margin-left: 4.56%;}
 }
 
-@media (max-width: 767px) {
+@media (min-width: 641px) {
+	.adaptive-properties__page-content:nth-child(2) {width: 271px;}
+}
+
+@media (max-width: 640px) {
 	.page-content {
 		flex-wrap: wrap;
 		justify-content: start;
 	}
-	.flex-properties__page-content:nth-child(n + 1) {
+	
+	.adaptive-properties__page-content:nth-child(n + 1) {
 		width: 100%;
 		margin-left: 0;
 	}
+	
+	.adaptive-properties__page-content:nth-child(2) {margin-top: 40px;}
 }
+
 
 
 				/*	---------- СПИСОК СТАТЕЙ 'MAIN' ----------	*/
+				
 .post-list__page-content {max-width: var(--safe-width-1-desktop);}	/* 790px; */
 
 .article__post-list:nth-child(n + 2) {margin-top: 60px;}
-
-@media (min-width: 1200px) {
-	.article__post-list {display: flex;}
-	.preview__article__post-list {flex: none;}
-}
-
-@media (max-width: 1199px) {
-	.article__post-list:after {
-		display: block;
-		background-color: var(--border-color-1);
-		content: "";
-		height: 3px;
-		width: 100%;
-		margin-top: 20px;
-	}
-}
-
-@media (min-width:768px) and (max-width: 1199px) {
-	.article__post-list:nth-child(n + 2) {margin-top: 40px;}
-	.article__post-list:last-child:after {display: none;}
-}
-
-
-@media (max-width: 767px) {
-	.article__post-list:nth-child(n + 2) {margin-top: 35px;}
-}
-
 .img__article__post-list {
 	display: block;
 	max-width: 100%;
@@ -347,13 +345,6 @@
 	box-sizing: border-box;
 	justify-content: start;
 	position: relative;	
-}
-
-@media (max-width: 1199px) {
-	.content__article__post-list {
-		margin-left: 0;
-		margin-top: 17px;
-	}	
 }
 
 .menu__article {
@@ -371,13 +362,6 @@
 	line-height: 24px;
 	font-style: normal;
 	color: var(--special-color-2);
-}
-
-@media (max-width: 767px) {
-	.title__article__post-list {
-		font-size: 16px;
-		line-height:20px;
-	}
 }
 
 .link__title__article__post-list {color: inherit}
@@ -417,15 +401,48 @@
 
 .p-margin-top {margin-top: 22px;}
 
+@media (min-width: 1200px) {
+	.article__post-list {display: flex;}
+	.preview__article__post-list {flex: none;}
+}
+
+@media (max-width: 1199px) {
+	.article__post-list:after {
+		display: block;
+		background-color: var(--border-color-1);
+		content: "";
+		height: 3px;
+		width: 100%;
+		margin-top: 20px;
+	}
+	
+	.preview__article__post-list {flex: auto;}
+	
+	.content__article__post-list {
+		margin-left: 0;
+		margin-top: 17px;
+	}	
+}
+
+@media (min-width:641px) and (max-width: 1199px) {
+	.article__post-list:nth-child(n + 2) {margin-top: 40px;}
+	.article__post-list:last-child:after {display: none;}
+}
+
+
+@media (max-width: 640px) {
+	.article__post-list:nth-child(n + 2) {margin-top: 35px;}
+	
+	.title__article__post-list {
+		font-size: 16px;
+		line-height:20px;
+	}
+}
+
 
 			/*	---------- 'ASIDE' ----------	*/
 			
-.aside__page-content {width: 271px;}
-
-@media (max-width: 767px) {
-	.aside__page-content {margin-top: 40px;}
-	.title__aside-header {font-size: 16px;}
-}
+.aside__page-content {min-width: 271px;}
 
 .latest-posts__aside {}
 
@@ -479,6 +496,8 @@
 
 .link__title__latest-post {color: inherit;}
 
+@media (max-width: 640px) {.title__aside-header {font-size: 16px;}}
+
 
 			/*	---------- 'ASIDE' ПОИСК ----------	*/
 .search-form__aside {
@@ -519,17 +538,9 @@
 	box-sizing: border-box;
 }	/* .flex-list-menu__tools */
 
-@media (min-width: 768px) {
-	.tag__tags-menu:nth-child(n + 2) {margin-left: var(--aside-tags-h-between);}
-	.tag__tags-menu:nth-child(3n + 4) {margin-left: 0;} /* 4,7, ... */
-	.tag__tags-menu:nth-child(n + 4) {margin-top: var(--aside-tags-v-between);} /* 2-й ряд и ниже */
-}
-
-@media (max-width: 767px) {
-	.tag__tags-menu:nth-child(n + 1) {
-		margin-right: var(--aside-tags-h-between);
-		margin-bottom: var(--aside-tags-v-between);
-	}
+.tag__tags-menu:nth-child(n + 1) {
+	margin-right: var(--aside-tags-h-between);
+	margin-bottom: var(--aside-tags-v-between);
 }
 
 .button__tags-menu {
@@ -557,7 +568,7 @@
 			
 .themes__aside {margin-top: var(--aside-space-between);}
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
 	.themes__aside {
 		margin-top: calc(var(--aside-space-between) - var(--aside-tags-v-between));
 	}
@@ -638,7 +649,7 @@
 	.product:nth-child(n + 3) {margin-top: 30px;}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 640px) {
 	.product {width: 100%;}
 	
 	.product:nth-child(n + 2) {margin-top: 25px;}
@@ -674,7 +685,7 @@
 	margin-bottom: 7px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 640px) {
 	.product-title {
 		font-size: 17px;
 		line-height: 22px;
@@ -793,12 +804,12 @@
 
 
 				/*	---------- <section> 'FEDDBACK-POPUP' (ВСПЛЫВАЮЩЕЕ ОКНО) ----------	*/
-				
+			
 .feedback-pupup {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	}
+}
 
 .feedback-pupup::after {z-index: 2021;} /* TOOLS */
 
@@ -904,6 +915,12 @@
 	width: 100%;
 	text-align: center;
 	vertical-align: middle;
+}
+
+@media (max-width: 640px) {
+	.feedback-pupup-window {width: 330px;}
+
+	.feedback-form {padding: 0 30px 30px;}
 }
 
 
