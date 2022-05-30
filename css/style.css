@@ -120,7 +120,7 @@
 
 @media (max-width: 767px) { /* mobile */
 	.page-header {
-		padding: 32px 0 220px;
+		padding: 32px 4.44% 220px;
 		background-image: url(../img/banner-mobile.jpg);
 	}
 	
@@ -129,7 +129,7 @@
 	.container__page-header {
 		width: 100%;
 		justify-content: flex-end;
-		padding: 0 4.44%;
+		/*padding: 0 4.44%;*/
 	}
 
 	.logo-for-mobile__page-header {display: block;}
