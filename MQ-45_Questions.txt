@@ -6,11 +6,29 @@ MQ-45 ДИПЛОМ
 
 Здравствуйте. Помогите разобраться с некоторыми моментами дипломной работы по курсу MQ-45, пожалуйста:
 
-23.05.2022
+30.05.2022
 ----------------
-1) Почему срабатывает .section__feedback-form:nth-child(n + 3) {margin-top: 34px;}, а не :nth-child(n+2) ?
+1) Для выполнения пункта "Состояния при повороте экрана" задания дипломной курса MQ-45 составил в разделе страницы "Сейчас в тренде" медиа-запросы в строках 247-267, где в том числе для orientation: landscape прописал соответствующие max-height. В симуляции моб.устройств браузера срабатывает корректно: max-height воспринимается как device-height. А вот без симуляции max-height не воспринимается как device-height. Что нужно делать в этом случае? Прописать в html meta content="width=device-width, heigth=device-heigth" не помогло.
+@media (max-height: 1199px) and (orientation: landscape) {
+	.topic-article {
+		width: 24.8%;
+		min-height: 321px;
+	}
+}
+@media (max-width: 1199px) and (orientation: portrait),
+	(max-height: 640px) and (orientation: landscape) {
+	.topic-article {
+		width: 49.8%;
+		min-height: 248px;
+	}
+}
 
-2) Как сделать, чтобы в окне ФИДБЕК не уходить ТАБом на страницу, а ходить по кругу только в окне ФИДБЕК? 
-
+2) Если для адаптива нужно менять картинки (например, для товаров внизу страницы),то картинки прописывать в CSS, а не в разметке? У меня сейчас в разметке.
+<div class='goods__shop-content'>
+	<article class='product'>
+		<picture class='product-imgbox'>
+			<img class='product-img'
+				src="img/shop-item-desk1.jpg" 
+				alt="Превью товара 'Подушки на диван'">	</picture>	
 
 ***************************************************************************
