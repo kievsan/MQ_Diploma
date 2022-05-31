@@ -7,7 +7,7 @@
 	--min-width__mobile: 360px;
 	--safe-width-1-desktop: 790px;
 	--safe-width-2: 690px;
-	--safe-width-3: 400px;
+	--safe-width-3: 410px;
 	--special-color-1: #b59f5b; 
 	--special-color-2: #0f0d0e;
 	--special-color-3: #ebe7d7;
@@ -21,7 +21,7 @@
 }
 
 * {
-	margin: 0;
+	/*margin: 0;*/
 	padding:0;
 	box-sizing: border-box;
 	text-decoration: none;
@@ -243,7 +243,7 @@
 		line-height: 20px;
 	}
 }
-
+/*
 @media (max-width: 1199px) {
 	.topic-article {
 		width: 49.8%;
@@ -257,7 +257,7 @@
 		min-height: 230px;
 	}
 }
-/*
+*/
 @media (max-height: 1199px) and (orientation: landscape) {
 	.topic-article {
 		width: 24.8%;
@@ -279,7 +279,7 @@
 		min-height: 230px;
 	}
 }
-*/
+
 
 
 				/*	---------- МЕНЮ КАТЕГОРИЙ СТАТЕЙ 'TOPIC-ARTICLE' ----------	*/
