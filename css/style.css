@@ -257,21 +257,6 @@
 		min-height: 230px;
 	}
 }
-
-/*@media (vmax: 1199px) {
-	.topic-article {
-		width: 24.8%;
-		min-height: 321px;
-	}
-}
-
-@media (vmax: 640px) {
-	.topic-article {
-		width: 49.8%;
-		min-height: 248px;
-	}
-}
-*/
 /*
 @media (max-height: 1199px) and (orientation: landscape) {
 	.topic-article {
