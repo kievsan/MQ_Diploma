@@ -7,7 +7,7 @@
 	--min-width__mobile: 360px;
 	--safe-width-1-desktop: 790px;
 	--safe-width-2: 690px;
-	--safe-width-3: 410px;
+	--safe-width-3: 400px;
 	--special-color-1: #b59f5b; 
 	--special-color-2: #0f0d0e;
 	--special-color-3: #ebe7d7;
@@ -21,7 +21,7 @@
 }
 
 * {
-	/*margin: 0;*/
+	margin: 0;
 	padding:0;
 	box-sizing: border-box;
 	text-decoration: none;
@@ -31,10 +31,10 @@
 .body {}
 
 .page-header {
-	min-width: var(--min-width__mobile);
-	padding: 28px 0 123px;
 	position: relative;
-	background: url(../img/banner-bg.jpg) left top /cover no-repeat #2c4641;	
+	/*min-width: var(--min-width__mobile);*/
+	padding: 28px 0 123px;
+	background: url(../img/banner-bg.jpg) left top /cover no-repeat #2c4641;
 	font-family: inherit;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -42,9 +42,8 @@
 
 .page-header::after {} /* TOOLS */
 
-.container__page-header {
+.upper-container__page-header {
 	width: 70%;
-	min-width: var(--min-width__mobile);
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
@@ -105,34 +104,34 @@
 	line-height: 75px;
 }
 
-@media (max-width: 1199px) { /* mobile + tablet */
-	.page-header {		
-		padding: 40px 0 100px;
-		background-image: url(../img/banner-bg-tablet.jpg);
-	}
-	
-	.container__page-header {width: 91%;}
-	
-	.list-menu__page-header {display: none;}
-	
+@media (max-width: 1199px) { 
+	.list-menu__page-header {display: none;}	
 	.button-nav-menu__page-header {display: block;}
 }
 
-@media (max-width: 767px) { /* mobile */
+@media (min-width: 641px) and (max-width: 1199px) {	
+	.page-header {		
+		padding: 40px 0 100px;
+		background-image: url(../img/banner-bg-tablet.jpg);
+	}	
+	
+	.upper-container__page-header {width: 91%;}	
+}
+
+@media (max-width: 640px) { 
 	.page-header {
 		padding: 32px 4.44% 220px;
 		background-image: url(../img/banner-mobile.jpg);
 	}
 	
 	.logo__page-header {display: none;}
-	
-	.container__page-header {
-		width: 100%;
-		justify-content: flex-end;
-		/*padding: 0 4.44%;*/
-	}
 
 	.logo-for-mobile__page-header {display: block;}
+	
+	.upper-container__page-header {
+		width: 100%;
+		justify-content: flex-end;
+	}
 
 	.title__page-header {
 		max-width: var(--safe-width-3);
