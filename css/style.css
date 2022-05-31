@@ -836,18 +836,21 @@
 				/*	---------- <section> 'FEDDBACK-POPUP' (ВСПЛЫВАЮЩЕЕ ОКНО) ----------	*/
 
 .feedback-pupup {
-	display: flex;
-	justify-content: center;
-	align-items: center;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
     
 }
 
-.feedback-pupup::after {z-index: 2021;} /* TOOLS */
+.feedback-pupup::after {
+    position: fixed !important;
+	z-index: 2021;
+	} /* TOOLS */
 
 .feedback-pupup-window {
 	position: fixed;
@@ -982,7 +985,7 @@
 */
 
 .page-header::after,
-.topic-article::after, 
+.topic-article::after,
 .feedback-pupup::after {
     content: "";
     background-color: #000000;
@@ -1069,7 +1072,7 @@
 	 clip: rect(1px, 1px, 1px, 1px);
 }
 
-._hidden {/*display: none;*/}
+._hidden {display: none;}
 
 /*#search-field::-webkit-input-placeholder {color: auto;}*/
 /*input::-webkit-input-placeholder {color: blue;}*/
